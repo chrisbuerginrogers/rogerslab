@@ -43,9 +43,10 @@ function renderMainPage(data){
     document.querySelector('.container').innerHTML = `
         ${renderNavbar('main', Object.keys(data))}
         ${renderAbout(data.about)}
-        ${renderNews(data.news)}
         ${renderProjects(data.projects)}
-        ${renderFooter(data.footer)}
+    `
+    document.querySelector('footer').innerHTML = `
+        ${renderFooter(data.about)}
     `
 }
 function renderAbout(about){
@@ -53,11 +54,12 @@ function renderAbout(about){
     <section id="about">
         <h1 class="title">${about.name}</h1>
         <div class="row">
-            <div class="col-12">
-                <img class="profile-img" src="${about.photo}"/>
+            <div class="col-12, textcenter">
                 <p>
-                ${about.desc}
+                    ${about.desc}
                 </p>
+                <img class="profile-img" src="${about.photo}"/>
+                
             </div>
         </div >    
     </section>`
@@ -76,33 +78,10 @@ function renderMaterialIcon(type){
     }
 }
 
-function renderNews(news){
-    return `
-    <section id="news">
-        <h1 class="title">News</h1>
-        <div class="news-list">
-            ${renderNewsItems(news)}
-        </div>
-    </section>
-    `
-}
-function renderNewsItems(news){
-    return news.slice(0,6).map(d=>`
-        <div class="row">
-            <div class="col-8">
-                ${d.title}
-            </div>
-            <div class="col-4">
-                ${d.date}
-            </div>
-        </div>
-    `).join('');
-}
-
 function renderProjects(projects){
     return `
     <section id="projects">
-        <h1 class="title">Projects</h1>
+        <h1 class="title">Research Focus</h1>
         <div class="project-list">
             ${renderProjectItems(projects)}
         </div>
@@ -128,16 +107,6 @@ function renderProjectItems(projects){
                             ${tag}
                         </span>
                     `).join('')}
-                </div>
-                <div class="project-materials">
-                    ${d.materials.map(m=>`
-                        <span>
-                            <a href="${m.path}" target="_blank">${renderMaterialIcon(m.label)} 
-                            ${m.label}
-                            </a>
-                        </span>
-                    `).join('')}
-                    
                 </div>
             </div> 
             <div class="col-6">
@@ -194,19 +163,16 @@ function renderProjectDetail(d){
     `
 }
 
-function renderFooter(footer){
+function renderFooter(about){
     return `
-    <footer>
-        <div class="row">
-            <div class="col-4">
-                
-                <img class="footer-img" src="${footer.ceeologo}"/>
-            </div>
-            <div class="col-6">
-                <p>
-                ${footer.about}
-                </p>
-            </div>
-        </div >    
-    </footer>`
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+            <img class="footer-img" src="${about.ceeologo}"/>
+        </div>
+        <div class="col-4">
+        </div>
+    </div >    
+    `
 }

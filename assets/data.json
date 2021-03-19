@@ -1,49 +1,27 @@
 {   
     "about":{
-        "name":"Rogers Lab",
-        "photo":"assets/rogerslab/profile.png",
-        "desc":"Sharing research and development projects, tools, and technologies being created in Rogers Lab at Tufts University"
-    },
-    "footer":{
+        "name":"Tufts Play Basement Lab",
+        "photo":"assets/rogerslab/mountain.jpg",
+        "desc":"Our mission is to ...",
         "logo":"",
         "ceeologo":"assets/rogerslab/CEEO-logo.png",
-        "about":"Rogers Lab, Tufts University",
         "links":""
     },
-    "news":[
-        {
-            "title":"Launching XXX",
-            "date": "Mar 3, 2021"
-        },
-        {
-            "title":"Presenting YYY",
-            "date": "Jan 13, 2021"
-        },
-        {
-            "title":"Traveling to Korea",
-            "date": "Dec 12, 2020"
-        },
-        {
-            "title":"Serving as a program committee for IEEE",
-            "date": "Sep 18, 2020"
-        },
-        {
-            "title":"Demonstrating ZZZ",
-            "date": "Sep 11, 2020"
-        },
-        {
-            "title":"Attending HRI 2020",
-            "date": "May 04, 2020 ~ May 09, 2020"
-        }
-    ],
+    "people":{
+        "name":"",
+        "position":"",
+        "research-interest":"",
+        "link":"",
+        "email":""
+    },
     "projects":[
         {
             "id":"roboticsplayground",
-            "title": "Robotics Playground",
-            "subtitle": "Experimental library of placemat instructions for open-ended robotics challenges",
-            "authors": "Sara Willner-Giwerc, Chris Rogers",
-            "teaser": "assets/roboticsplayground/teaser.png",
-            "tags":["Robotics", "Educational Tool"],
+            "title": "LEGO Engineering",
+            "subtitle": "Development of extension application and educational tool to support advanced engineering learning and solution diversity with LEGO products",
+            "authors": "Sara Willner-Giwerc, Ziyi Zhang, Olga Sans Copé",
+            "teaser": "assets/DesigningForSolutionDiversity/IMG_2622.jpeg",
+            "tags":["robotics", "engineering", "AI", "solution diversity", "remote collaboration"],
             "materials": [
                 { 
                     "label": "Paper",
@@ -61,12 +39,12 @@
             "desc": "Robotics Playground is an experimental library of placemat instructions for robotics activities. Developed by researchers at the Tufts University CEEO, this library is designed to maximize solution diversity and foster student-driven learning."
         },
         {
-            "id":"milan",
-            "title": "Building Smart Motors",
-            "subtitle": "story of how we changed the world with a $20 product",
-            "authors": "Milan Dahal",
+            "id":"learningthroughplay",
+            "title": "Learning Through Play",
+            "subtitle": "Making the introduction of technology in classrooms more playful to children and more accessible to teachers to help children equip with the skills to thrive in a technology-driven world",
+            "authors": "Milan Dahal, Dipeshwor Man Shrestha",
             "teaser": "assets/smartmotor/teaser.png",
-            "tags":["Robotics", "Educational Tool"],
+            "tags":["community-based", "low-cost", "robotics"],
             "materials": [
                 { 
                     "label": "Paper",
@@ -81,35 +59,12 @@
             "desc": "This amazing piece of tech will revolutionize the way you program robots. Imagine a world where you can program a robot the way you train your dog, or your kid, maybe just your dog. <br> <br> The way you program this robot is by teaching what action follows what reaction.. for example, you can teach your motor to go to 60 degrees when you push a button, and turn to 120 degrees when you hold it for  more than 1 second. This works by training the motor. That is how you would code it!!! Done ! "
         },
         {
-            "id":"snapr",
-            "title": "SNAPR: Snap, Narrate, Post and Refelect",
-            "subtitle": "Automatic e-portfolio generator",
-            "authors": "Dipeshwor Man Shrestha, Chris Rogers",
-            "teaser": "assets/snapr/teaser.png",
-            "tags":["Engineering", "System"],
-            "materials": [
-                { 
-                    "label": "Paper",
-                    "path": "assets/snapr/paper.pdf"
-                },
-                { 
-                    "label": "Video",
-                    "path": ""
-                },
-                { 
-                    "label": "Demo",
-                    "path": "https://github.com/dipeshwor/SNAPR"
-                }
-            ],
-            "desc": ""
-        },
-        {
-            "id":"draw2code",
-            "title": "Draw2Code",
-            "subtitle": "Low-cost and expressive tangible computational kit",
-            "authors": "Hyejin Im, Chris Rogers",
+            "id":"physical-virtual",
+            "title": "Bridging the Physical and Virtual Divide",
+            "subtitle": "TBD",
+            "authors": "Hyejin Im, Ziyi Zhang",
             "teaser": "assets/draw2code/teaser.png",
-            "tags":["Computational Thinking", "System"],
+            "tags":["computational thinking", "AI", "hands-on learning"],
             "materials": [
                 { 
                     "label": "Paper",
@@ -127,12 +82,12 @@
             "desc": "Computational thinking is nowadays considered an essential skill in the K-12 educational curriculum. While many computational kits and platforms have been developed in the past decades, most of the tangible kits that are designed for early childhood are either expensive to be deployed at home and in classroom environments or only provide pre-defined challenges with limited creative content creation opportunities. We investigated low-cost and expressive tangible interfaces that foster computational literacy. <br><br> Draw2Code is a paper-based tangible computational kit for young children to create an interactive 2D augmented reality animation. Children use Draw2Code to make their paper drawing alive as an animated virtual sprite and control it using hand gestures. Engaging with the kit, children can design, code, and play with their creations. It exposes children to basic programming concepts through playful and tangible interaction."
         },
         {
-            "id":"designforsolutiondievrsity",
-            "title": "Designing for Solution Diversity",
-            "subtitle": "Development of and Research on Placemat Instructions",
-            "authors": "Sara Willner-Giwerc, Chris Rogers",
-            "teaser": "assets/DesigningForSolutionDiversity/IMG_2622.jpeg",
-            "tags":["Robotics", "Educational Tool"],
+            "id":"musical-instrument",
+            "title": "Musical Instrument Engineering",
+            "subtitle": "TBD",
+            "authors": "Matthew Mueller, Chris Rogers",
+            "teaser": "assets/musical-instrument/cymbalrobot.jpg",
+            "tags":["engineering", "music"],
             "materials": [
                 { 
                     "label": "Paper",
@@ -150,114 +105,27 @@
             "desc": "This project explores the design of a new type of instructions for teaching engineering practices through robotics. Designed intentionally with solution dievrsity in mind, placemat instructions help lower the barreires to entry to the teaching and learning of engineering through robotics while promoting student engagement in the engineering practices of: iteration, collaboration, and dealing with uncertainty."
         },
         {
-            "id":"SP+",
-            "title": "What is the ceiling of SPIKE Prime?",
-            "subtitle": "SPIKE Prime goes to college",
-            "authors": "Jeremy, Eric, Owen, many students, and Chris",
-            "teaser": "assets/ME35/Crinkle.png",
-            "tags":["Robotics", "Educational Tool"],
+            "id":"snapr",
+            "title": "Storytelling for Engineering",
+            "subtitle": "TBD",
+            "authors": "Dipeshwor Man Shrestha",
+            "teaser": "assets/stop_motion_animation/Dirghayu_.gif",
+            "tags":["engineering design process"],
             "materials": [
                 { 
                     "label": "Paper",
-                    "path": ""
+                    "path": "assets/snapr/paper.pdf"
                 },
                 { 
                     "label": "Video",
-                    "path": "https://drive.google.com/file/d/1xkxK65eN2zh4idECQc9Oy_SA3af2asYm/view?usp=sharing"
+                    "path": ""
                 },
                 { 
                     "label": "Demo",
-                    "path": ""
+                    "path": "https://github.com/dipeshwor/SNAPR"
                 }
             ],
             "desc": ""
-        },
-        {
-            "id":"Corp",
-            "title": "CORP",
-            "subtitle": "A Collaborative Online Robotics Platform",
-            "authors": "Olga Sans-Cope, Chris Rogers",
-            "teaser": "assets/Corp/teaser.png",
-            "tags":["Remote Learning", "STEM education", "Web-based robotics", "computer supported cooperative work (CSCW)"],
-            "materials": [
-                { 
-                    "label": "Paper",
-                    "path": ""
-                },
-                { 
-                    "label": "Video",
-                    "path": "https://drive.google.com/file/d/1s6qXG1YQnE-09eg5E9OUwKEAGdfKF7AV/view?usp=sharing"
-                },
-                { 
-                    "label": "Demo",
-                    "path": ""
-                }
-            ],
-            "desc": "An integrated educational learning development web-based environment intended for learning and teaching through robotics. CORP combines the potential of the Google web-based platform with the educational robot technology of the LEGO Mindstorms EV3 Kit. Designed for students in primary and high school, CORP allows students from different locations to interact collaboratively through sharing a Google Slide document with a custom add-on developed to talk to the EV3 robot."
-        },
-        {
-            "id": "alisonstest",
-            "title": "Alison's Test",
-            "subtitle": "Just checkin' this out for the Friday meeting.",
-            "authors": "Alison Earnhart, Jeffrey Lebowski",
-            "teaser": "assets/alisonstest/teaser.png",
-            "tags":["Engineering"],
-            "materials": [
-                { 
-                    "label": "Video",
-                    "path": "assets/alisonstest/video.mp4"
-                }
-
-            ],
-            "desc": "This is just a test to see how easy it is to change the website. Thanks for the video tutorial, Hyejin!"
-        }
-        ,
-        {
-            "id": "rlonspike",
-            "title": "Introduce Reinforcement learning with SPIKE Prime",
-            "subtitle": "Learning RL concepts through 2 robot-based and one web-based sessions",
-            "authors": "Ziyi Zhang, Sara Willner-Giwerc, Chris Rogers",
-            "teaser": "assets/rlonspike/teaser.png",
-            "tags":["Computational Thinking", "Robotics"],
-            "materials": [
-                { 
-                    "label": "Placemats",
-                    "path": "https://drive.google.com/drive/folders/1ATtLJzOIN6kjlQcH4xxFA3jqj1cj8B6v?usp=sharing"
-                },
-                { 
-                    "label": "Video",
-                    "path": "https://youtu.be/ismXOR-7eRI"
-                },
-                { 
-                    "label": "Demo",
-                    "path": "https://github.com/ZyZhangT/rlplayground"
-                }
-            ],
-            "desc": "As artificial intelligence (AI) plays a more prominent role in our everyday lives, it becomes increasingly important to introduce basic AI concepts to K-12 students. Reinforcement learning (RL), as one of the main paradiams in AI, is appilied in many gamified environment and is interesting to learn. In this project, we designed two robot-based and one web-based sessions to help middle and high school students learn basic RL concepts."
-        }
-        ,
-        {
-            "id": "stop_motion_animation",
-            "title": "Storytelling using stop motion animation",
-            "subtitle": "Some example projects that students in Nepal made using a mobile app",
-            "authors": "Dipeshwor Shrestha",
-            "teaser": "assets/stop_motion_animation/dirghayu_clock_stop motion project.gif",
-            "tags":["Animation", "Storytelling"],
-            "materials": [
-                { 
-                    "label": "Video",
-                    "path": "assets/stop_motion_animation/Soisa.mp4"
-                },
-                { 
-                    "label": "Video",
-                    "path": "assets/stop_motion_animation/Dirghayu_.gif"
-                },
-                { 
-                    "label": "Demo",
-                    "path": "https://padlet.com/TinkeringStudio/stopmotionkarkhana"
-                }
-            ],
-            "desc": "We introduced a tool that allowed students to create a stop motion animation which they posted on Padlet."
         }
     ]
 }

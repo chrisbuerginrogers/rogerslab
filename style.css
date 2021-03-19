@@ -1,5 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(1.1 * 1rem);
+    line-height: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0em;
 }
 .container{
     max-width:1024px;
@@ -46,7 +55,8 @@ li a {
 }
 
 footer{
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0;
     /* justify-content: center; */
     background-color: #51d294;
     /* width: 100%; */
@@ -62,9 +72,11 @@ footer{
 }
 
 section .title{
-    font-family: 'Poppins', cursive;
-    font-size: 2rem;
+    font-family: 'Open Sans', cursive;
+    font-size: 2.2rem;
     text-align: center;
+    font-weight: 700;
+    line-height: 2.2em;
 }
 section{
     margin: 1rem 0 1rem 0;
@@ -81,13 +93,15 @@ section{
     align-items: center;
 }
 
-
+.textcenter{
+    text-align: center;
+}
 
 
 .profile-img{
     border-radius: 5px;
     /* width: 800px; */
-    height:300px;
+    height:370px;
     object-fit:cover;
     display: block;
     margin-left: auto;
@@ -117,7 +131,7 @@ section{
 .tag:last-child{
     margin: 5px 0px 5px 0px;
 }
-.robotics{
+/* .robotics{
     background-color: #FFCDD2;
     color: #B71C1C;
 }
@@ -136,7 +150,7 @@ section{
 .engineering{
     background-color: #FFE0B2;
     color: #E65100;
-}
+} */
 
 .project-materials{
     margin: 0.5rem 0 0.5rem 0;
@@ -161,7 +175,7 @@ section{
 .project-teaser{
     border-radius: 5px;
     width: 100%;
-    /* height: 500px; */
+    height: 500px;
     object-fit:cover;
     display: block;
     margin-left: auto;
