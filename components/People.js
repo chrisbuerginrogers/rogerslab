@@ -3,9 +3,11 @@ export default function People(people){
     return `
     
     <section id="people">
-        <h1 class="title">People</h1>
-        <div class="people-list">
-            ${PeopleItems(people)}
+        <div class="wrapper">
+            <h1 class="title">People</h1>
+            <div class="people-list">
+                ${PeopleItems(people)}
+            </div>
         </div>
 
     </section>`;

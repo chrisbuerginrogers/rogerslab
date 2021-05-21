@@ -1,6 +1,6 @@
 {   
     "about":{
-        "name":"Tufts PET Lab",
+        "name":"Playful Engineering<br>Technologies Lab",
         "photo":"assets/rogerslab/mountain.jpg",
         "desc":"The Playful Engineering Technology Lab, led by Chris Rogers, explores and provides technologies for engineering education to benefit K-12 students and teachers.",
         "teaser":"assets/teaser2.png",
@@ -221,7 +221,7 @@
             "subtitle": "TBD",
             "authors": "Hyejin Im, Ziyi Zhang",
             "teaser": "assets/draw2code/teaser.png",
-            "tags":["computational thinking", "AI", "hands-on learning"],
+            "tags":["computational thinking", "AI", "AR", "hands-on learning"],
             "materials": [
                 { 
                     "label": "Paper",
