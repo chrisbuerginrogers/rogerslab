@@ -36,7 +36,7 @@ export function ProjectDetail(d){
         <div class="project-materials">
             ${d.materials.map(m=>`
                 <span>
-                    <a href="${m.path}" target="_blank">${renderMaterialIcon(m.label)} 
+                    <a href="${m.path}" target="_blank">${MaterialIcon(m.label)} 
                     ${m.label}
                     </a>
                 </span>

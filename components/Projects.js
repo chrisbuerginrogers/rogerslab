@@ -12,16 +12,15 @@ export default function Projects(projects){
 
 export function ProjectItems(projects){
     return projects.map(d=>`
-        <div class="row">
-            <div class="col-6">
+        <div class="project-box">
+                <img src="${d.teaser}" div class="teaser">
+            <div class="info">
+                <div class="project-overview">
                 <div class="project-title">
                     <a href="?project=${d.id}"><strong>${d.title}</strong></a>
                 </div>
                 <div class="project-subtitle">
                     ${d.subtitle}<br>
-                </div>
-                <div class="project-authors">
-                    ${d.authors}
                 </div>
                 <div class="project-tags">
                     ${d.tags.map(tag=>`
@@ -30,10 +29,9 @@ export function ProjectItems(projects){
                         </span>
                     `).join('')}
                 </div>
+                </div>
             </div> 
-            <div class="col-6">
-                <img src="${d.teaser}" div class="teaser">
-            </div>
+           
         </div>
         `).join('');
 }

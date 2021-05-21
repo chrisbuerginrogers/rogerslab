@@ -1,6 +1,7 @@
 
 import MainPage from './components/MainPage.js';
 import ProjectPage from './components/ProjectPage.js';
+import Navbar from './components/Navbar.js';
 fetch('assets/data.json')
 .then(resp=>resp.json())
 .then(data=>{

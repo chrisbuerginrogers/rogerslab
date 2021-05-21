@@ -5,7 +5,9 @@ export default function Footer(about){
         <div class="col-4">
         </div>
         <div class="col-4">
-            <img class="footer-img" src="${about.ceeologo}"/>
+            <p>Tufts Playful Engineering Technology Lab</p>
+            <p>Center for Engineering Education and Outreach</p>
+            <p>CEEO Innovations</p>
         </div>
         <div class="col-4">
         </div>
