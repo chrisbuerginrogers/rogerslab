@@ -14,9 +14,7 @@ fetch('assets/data.json')
         let project = data.projects.find(d=>d.id===params.get('project'));
         Navbar('project')
         ProjectPage(project);
-    }
-
-    
+    }    
 });
 
 

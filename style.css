@@ -16,13 +16,13 @@ body {
 }
 
 .intro .title{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 section .title{
-    font-family: 'Lexend', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    /* font-family: 'Press Start 2P', "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
-    font-size: 3rem;
+    /* font-family: 'Lexend', "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+    font-family: 'Press Start 2P', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.8rem;
     text-align: center;
     font-weight: black;
     line-height: 1.6em;
