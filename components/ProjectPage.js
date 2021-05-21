@@ -12,21 +12,25 @@ export default function ProjectPage(project){
 export function ProjectDetail(d){
     return `
     <section>
-        <h1 class="title" style="margin-bottom: 5px;">${d.title}</h1>
-        <div class="project-subtitle" style="text-align: center;">
-            ${d.subtitle}
-        </div>
-        <div class="project-authors" style="text-align: center;">
-            ${d.authors}
-        </div>
-        <div class="project-tags" style="text-align: center;">
-            ${d.tags.map(tag=>`
-                <span class="tag ${tag.toLowerCase()}">
-                    ${tag}
-                </span>
-            `).join('')}
-        </div>
+        
         <img class="project-teaser" src="${d.teaser}">
+        <div class="text-wrapper">
+            <h1 class="title" style="margin-bottom: 5px;">${d.title}</h1>
+            <div class="project-subtitle" style="text-align: center;">
+                ${d.subtitle}
+            </div>
+            <div class="project-authors" style="text-align: center;">
+                ${d.authors}
+            </div>
+            <div class="project-tags" style="text-align: center;">
+                ${d.tags.map(tag=>`
+                    <span class="tag ${tag.toLowerCase()}">
+                        ${tag}
+                    </span>
+                `).join('')}
+            </div>
+        </div>
+        
         
         <div class="project-desc">
             <p>
