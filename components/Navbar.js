@@ -3,8 +3,8 @@ export default function Navbar(page, items){
     <nav class="navbar">
         <ul>
            ${page==='project'? (
-                `<li>
-                    <a href="/#projects"><strong>Playful Engineering Technology Lab</strong></a>
+                `<li class="nav-title">
+                    <a href="/#projects">PLAYFUL ENGINEERING TECHNOLOGY LAB</a>
                 </li>`
            ):(
                 items.map(d=>

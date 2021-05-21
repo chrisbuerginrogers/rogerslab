@@ -9,7 +9,7 @@
     },
     "projects":[
         {
-            "id":"roboticsplayground",
+            "id":"lego-engineering",
             "title": "LEGO Engineering",
             "subtitle": "Development of extension application and educational tool to support advanced engineering learning and solution diversity with LEGO products",
             "authors": "Sara Willner-Giwerc, Ziyi Zhang, Olga Sans Copé",
@@ -29,7 +29,41 @@
                     "path": "https://ceeoinnovations.github.io/RoboticsPlayground/index.html"
                 }
             ],
-            "desc": "Robotics Playground is an experimental library of placemat instructions for robotics activities. Developed by researchers at the Tufts University CEEO, this library is designed to maximize solution diversity and foster student-driven learning."
+            "desc": "LEGO Engineering is ....",
+            "related": [
+                { 
+                    "title": "Robotics Playground",
+                    "desc": "Robotics Playground is an experimental library of placemat instructions for robotics activities. Developed by researchers at the Tufts University CEEO, this library is designed to maximize solution diversity and foster student-driven learning.",
+                    "teaser": "assets/roboticsplayground/paper.pdf",
+                    "link": ""
+                },
+                { 
+                    "title": "Project 2",
+                    "desc": "",
+                    "teaser": "assets/roboticsplayground/video.mp4",
+                    "link": ""
+                },
+                { 
+                    "title": "Paper 3",
+                    "desc": "",
+                    "teaser": "https://ceeoinnovations.github.io/RoboticsPlayground/index.html",
+                    "link": ""
+                }
+            ],
+            "publications": [
+                { 
+                    "title": "Paper 1",
+                    "link": ""
+                },
+                { 
+                    "title": "Paper 2",
+                    "link": ""
+                },
+                { 
+                    "title": "Paper 3",
+                    "link": ""
+                }
+            ]
         },
         {
             "id":"learningthroughplay",
