@@ -1,10 +1,10 @@
 export default function Navbar(page, items){
     return `
-    <nav>
+    <nav class="navbar">
         <ul>
            ${page==='project'? (
                 `<li>
-                    <a href="/#projects">Go Back</a>
+                    <a href="/#projects"><strong>Playful Engineering Technology Lab</strong></a>
                 </li>`
            ):(
                 items.map(d=>
@@ -16,4 +16,3 @@ export default function Navbar(page, items){
         </ul>
     </nav>`
 }
-

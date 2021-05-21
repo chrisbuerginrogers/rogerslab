@@ -1,176 +1,12 @@
 {   
     "about":{
-        "name":"Playful Engineering<br>Technologies Lab",
+        "name":"PLAYFUL ENGINEERING<br>TECHNOLOGY LAB",
         "photo":"assets/rogerslab/mountain.jpg",
-        "desc":"The Playful Engineering Technology Lab, led by Chris Rogers, explores and provides technologies for engineering education to benefit K-12 students and teachers.",
+        "desc":"The Playful Engineering Technology Lab (temporary name) is led by Chris Rogers, a professor of Mechanical Engineering at Tufts University. We are housed in Tufts' Center for Engineering Education and Outreach (CEEO). We explore and provide technologies for K-12 science, math, and engineering education to bring engineering into pre-college students and excite children about solving problems and learning science and math.",
         "teaser":"assets/teaser2.png",
         "ceeologo":"assets/rogerslab/CEEO-logo.png",
         "links":""
     },
-    "people":[
-        {
-            "name":"Chris Rogers",
-            "position":"Principal Investigator",
-            "photo":"assets/people/chris-rogers.png",
-            "link":"https://",
-            "email":"crogers@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Ethan Danahy",
-            "position":"Research Assistant Professor",
-            "photo":"assets/people/ethan-danahy.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Jennifer Cross",
-            "position":"Research Assistant Professor",
-            "photo":"assets/people/jennifer-cross.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Lynne Ramsey",
-            "position":"Staff",
-            "photo":"assets/people/lynne-ramsey.jpeg",
-            "link":"https://ceeo.tufts.edu/people/staff/lynne-ramsey",
-            "email":"lynne.ramsey@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Sara Willner-Giwerc",
-            "position":"PhD Student",
-            "photo":"assets/people/sara-willner-giwerc.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"sara.willner_giwerc@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Ziyi Zhang",
-            "position":"PhD Student",
-            "photo":"assets/people/ziyi-zhang.jpeg",
-            "link":"",
-            "email":"ziyi.zhang@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Milan Dahal",
-            "position":"PhD Student",
-            "photo":"assets/people/milan-dahal.jpeg",
-            "link":"",
-            "email":"milan.dahal@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Dipeshwor Man Shrestha",
-            "position":"PhD Student",
-            "photo":"assets/people/dipeshwor-shrestha.jpeg",
-            "link":"",
-            "email":"dipeshwor@karkhana.asia",
-            "status": "Member"
-        },
-        {
-            "name":"Hyejin Im",
-            "position":"Master's Student",
-            "photo":"assets/people/hyejin-im.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Hanna Khoury",
-            "position":"Master's Student",
-            "photo":"assets/people/hanna-khoury.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Olga Sans Copé",
-            "position":"Visiting Researcher",
-            "photo":"assets/people/olga-sans.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        }
-    ],
-    "alumni":[
-        {
-            "name":"Matt Mueller",
-            "position":"Principal Investigator",
-            "photo":"",
-            "link":"https://",
-            "email":"crogers@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Ethan Danahy",
-            "position":"Research Assistant Professor",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Jennifer Cross",
-            "position":"Research Assistant Professor",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Hyejin Im",
-            "position":"Research Assistant",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Hyejin Im",
-            "position":"Grad Student",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Sara",
-            "position":"PhD Student",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Milan",
-            "position":"Grad Student",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Dipesh",
-            "position":"Grad Student",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Lynne",
-            "position":"Admin",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Matt Mueller",
-            "position":"PhD Student",
-            "link":"",
-            "email":"",
-            "status": "Alumni"
-        }
-    ],
-    
     "projects":[
         {
             "id":"roboticsplayground",
@@ -283,6 +119,96 @@
                 }
             ],
             "desc": ""
+        }
+    ],
+    "people":[
+        {
+            "name":"Chris Rogers",
+            "position":"Principal Investigator",
+            "photo":"assets/people/chris-rogers.png",
+            "link":"https://",
+            "email":"crogers@tufts.edu",
+            "status": "Member"
+        },
+        {
+            "name":"Ethan Danahy",
+            "position":"Research Assistant Professor",
+            "photo":"assets/people/ethan-danahy.jpeg",
+            "link":"https://hyejinim.github.io",
+            "email":"hyejinim17@gmail.com",
+            "status": "Member"
+        },
+        {
+            "name":"Jennifer Cross",
+            "position":"Research Assistant Professor",
+            "photo":"assets/people/jennifer-cross.jpeg",
+            "link":"https://hyejinim.github.io",
+            "email":"hyejinim17@gmail.com",
+            "status": "Member"
+        },
+        {
+            "name":"Lynne Ramsey",
+            "position":"Staff",
+            "photo":"assets/people/lynne-ramsey.jpeg",
+            "link":"https://ceeo.tufts.edu/people/staff/lynne-ramsey",
+            "email":"lynne.ramsey@tufts.edu",
+            "status": "Member"
+        },
+        {
+            "name":"Sara Willner-Giwerc",
+            "position":"PhD Student",
+            "photo":"assets/people/sara-willner-giwerc.jpeg",
+            "link":"https://hyejinim.github.io",
+            "email":"sara.willner_giwerc@tufts.edu",
+            "status": "Member"
+        },
+        {
+            "name":"Ziyi Zhang",
+            "position":"PhD Student",
+            "photo":"assets/people/ziyi-zhang.jpeg",
+            "link":"",
+            "email":"ziyi.zhang@tufts.edu",
+            "status": "Member"
+        },
+        {
+            "name":"Milan Dahal",
+            "position":"PhD Student",
+            "photo":"assets/people/milan-dahal.jpeg",
+            "link":"",
+            "email":"milan.dahal@tufts.edu",
+            "status": "Member"
+        },
+        {
+            "name":"Dipeshwor Man Shrestha",
+            "position":"PhD Student",
+            "photo":"assets/people/dipeshwor-shrestha.jpeg",
+            "link":"",
+            "email":"dipeshwor@karkhana.asia",
+            "status": "Member"
+        },
+        {
+            "name":"Hyejin Im",
+            "position":"Master's Student",
+            "photo":"assets/people/hyejin-im.jpeg",
+            "link":"https://hyejinim.github.io",
+            "email":"hyejinim17@gmail.com",
+            "status": "Member"
+        },
+        {
+            "name":"Hanna Khoury",
+            "position":"Master's Student",
+            "photo":"assets/people/hanna-khoury.jpeg",
+            "link":"https://hyejinim.github.io",
+            "email":"hyejinim17@gmail.com",
+            "status": "Member"
+        },
+        {
+            "name":"Olga Sans Copé",
+            "position":"Visiting Researcher",
+            "photo":"assets/people/olga-sans.jpeg",
+            "link":"https://hyejinim.github.io",
+            "email":"hyejinim17@gmail.com",
+            "status": "Member"
         }
     ]
 }

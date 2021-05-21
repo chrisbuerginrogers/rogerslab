@@ -3,7 +3,7 @@ export default function Projects(projects){
     return `
     
     <section id="projects">
-        <h1 class="title">Research Focus</h1>
+        <h1 class="title">MAIN RESEARCH PROJECTS</h1>
         <div class="project-list">
             ${ProjectItems(projects)}
         </div>

@@ -4,7 +4,7 @@ export default function People(people){
     
     <section id="people">
         <div class="wrapper">
-            <h1 class="title">People</h1>
+            <h1 class="title">PEOPLE</h1>
             <div class="people-list">
                 ${PeopleItems(people)}
             </div>
