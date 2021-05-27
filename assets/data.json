@@ -30,7 +30,7 @@
                     "link": ""
                 },
                 { 
-                    "title": "Introduce Reinforcement Learning with SPIKE Prime",
+                    "title": "Introducing Reinforcement Learning with SPIKE Prime",
                     "authors": "Ziyi Zhang, Chris Rogers",
                     "desc": "As artificial intelligence (AI) plays a more prominent role in our everyday lives, it becomes increasingly important to introduce basic AI concepts to K-12 students. Reinforcement learning (RL), as one of the main paradiams in AI, is appilied in many gamified environment and is interesting to learn. In this project, we designed two robot-based and one web-based sessions to help middle and high school students learn basic RL concepts.",
                     "teaser": "assets/lego-engineering/rlonspike2.png",
