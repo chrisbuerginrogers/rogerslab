@@ -21,7 +21,7 @@ export function PeopleItems(people){
 
             
             <div class="people-name">
-                <a href="?people=${d.id}">${d.name}</a>
+                <a href="${d.link}" target="_blank">${d.name}</a>
             </div>
             
             <div class="people-position">

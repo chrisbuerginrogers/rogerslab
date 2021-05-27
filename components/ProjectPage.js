@@ -14,76 +14,72 @@ export default function ProjectPage(project){
 
 export function ProjectDetail(d){
     return `
-    <section>
-        
-        
-        
-        <div class="project-intro">
-            <div class="text-wrapper">
-                <h1 class="title" style="margin-bottom: 5px; text-align: left">${d.title}</h1>
-                <div class="project-subtitle">
-                    ${d.subtitle}
-                </div>
-                
-                <div class="project-tags"">
-                    ${d.tags.map(tag=>`
-                        <span class="tag ${tag.toLowerCase()}">
-                            ${tag}
-                        </span>
-                    `).join('')}
-                </div>
-            
-            </div>
-        </div>
-
-
+    <section id="about" class="project-intro">
         <div class="text-wrapper">
-            <div class="project-desc">
-                <p>
-                    ${d.desc}
-                </p>
+            <h1 class="title" style="font-size: 3rem; margin-bottom: 10px; text-align: left; color: #FEFA91;">${d.title}</h1>
+            <div class="project-subtitle" style="color: #fff;">
+                ${d.subtitle}
+            </div>
+            
+            <div class="project-tags"">
+                ${d.tags.map(tag=>`
+                    <span class="tag ${tag.toLowerCase()}">
+                        ${tag}
+                    </span>
+                `).join('')}
+            </div>
+        
+        </div>
+    </section>
+
+
+    <section id="overview">
+        <div class="text-wrapper">
+            <h2 class="title">OVERVIEW</h2>
+            <p>
+                ${d.desc}
+            </p>
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="text-wrapper">
+            <h2 class="title">PUBLICATIONS</h2>
+            <div class="publication-list">
+                ${d.publications.map(p=>`
+                    <p>
+                        <a href="${p.link}" target="_blank">
+                        ${p.title}
+                        </a>
+                    </p>
+                `).join('')}
             </div>
         </div>
     </section>
-    <section>
-            
-           
-        <div class="text-wrapper">
-            <h2 class="subtitle">Related Projects</h2>
-        
-            <div class="project-list">
-                ${d.related.map(r=>`
-                <div class="project-box">
-                    <img src="${r.teaser}" div class="teaser">
-                    <div class="info">
-                        <div class="project-overview">
-                            <div class="project-title">
-                                <a href="?project=${r.link}"><strong>${r.title}</strong></a>
-                            </div>
-                            <div class="project-subtitle">
-                                ${r.desc}<br>
-                            </div>
-                            <buttom>Learn More</buttom>
+
+    <section id="related">
+        <h2 class="title">RELATED PROJECTS</h2>
+
+        <div class="project-list">
+            ${d.related.map(r=>`
+            <div class="project-box">
+                <img div class="teaser" src="${r.teaser}">
+                <div class="info">
+                    <div class="project-overview">
+                        <div class="project-title">
+                            <a href="?project=${r.link}"><strong>${r.title}</strong></a>
+                        </div>
+                        <div class="project-subtitle">
+                            ${r.desc}<br>
+                        </div>
+                        <div class="project-authors">
+                        ${r.authors}
                         </div>
                     </div>
                 </div>
-                    `).join('')}
             </div>
-
-            <div class="text-wrapper">
-                <h2 class="subtitle">Publications</h2>
-                <div class="publication-list">
-                    ${d.publications.map(p=>`
-                        <span>
-                            <a href="${p.link}" target="_blank"> 
-                            ${p.title}
-                            </a>
-                        </span>
-                    `).join('')}
-                </div>
-            </div>
+                `).join('')}
         </div>
-        
     </section>
     `
 }
