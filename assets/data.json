@@ -1,15 +1,149 @@
 {   
     "about":{
-        "name":"PLAYFUL ENGINEERING<br>TECHNOLOGY LAB",
-        "desc":"The Playful Engineering Technology Lab (temporary name) is led by Chris Rogers, a professor of Mechanical Engineering at Tufts University. We are housed in Tufts' Center for Engineering Education and Outreach (CEEO). We explore and provide technologies for K-12 science, math, and engineering education to bring engineering into pre-college students and excite children about solving problems and learning science and math.",
+        "name":"FUTURE EDUCATIONAL TECHNOLOGIES LAB",
+        "desc":"The Future Educational Technologies Lab is led by Chris Rogers, a professor of Mechanical Engineering at Tufts University. We are housed in Tufts' Center for Engineering Education and Outreach (CEEO). We explore and provide technologies for K-12 science, math, and engineering education to bring engineering into pre-college students and excite children about solving problems and learning science and math.",
         "teaser":"assets/teaser2.png",
         "ceeologo":"assets/global/CEEO-logo.png",
         "links":""
     },
+    "team":[
+        {
+            "id":"principal-investigators",
+            "people": [
+                {
+                    "name":"Chris Rogers",
+                    "position":"Professor of Mechanical Engineering",
+                    "photo":"assets/people/chris-rogers.png",
+                    "link":"https://crogers.pages.tufts.edu/",
+                    "email":"crogers@tufts.edu"
+                },
+                {
+                    "name":"Ethan Danahy",
+                    "position":"Co-Principal Investigator, Associate Research Professor",
+                    "photo":"assets/people/ethan-danahy.jpeg",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        },
+        {
+            "id":"members-grads",
+            "people": [
+                {
+                    "name":"Jennifer Cross",
+                    "position":"Research Assistant Professor",
+                    "photo":"assets/people/jennifer-cross.jpeg",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"Lynne Ramsey",
+                    "position":"Operation Staff",
+                    "photo":"assets/people/lynne-ramsey.jpeg",
+                    "link":"https://ceeo.tufts.edu/people/staff/lynne-ramsey",
+                    "email":"lynne.ramsey@tufts.edu"
+                },
+                {
+                    "name":"Alison Earnhart",
+                    "position":"Project Administrator",
+                    "photo":"assets/people/alison-earnhart.jpeg",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"Sara Willner-Giwerc",
+                    "position":"PhD Student",
+                    "photo":"assets/people/sara-willner-giwerc.jpeg",
+                    "link":"",
+                    "email":"sara.willner_giwerc@tufts.edu"
+                },
+                {
+                    "name":"Ziyi Zhang",
+                    "position":"PhD Student",
+                    "photo":"assets/people/ziyi-zhang.jpeg",
+                    "link":"",
+                    "email":"ziyi.zhang@tufts.edu"
+                },
+                {
+                    "name":"Milan Dahal",
+                    "position":"PhD Student",
+                    "photo":"assets/people/milan-dahal.jpeg",
+                    "link":"",
+                    "email":"milan.dahal@tufts.edu"
+                },
+                {
+                    "name":"Dipeshwor Man Shrestha",
+                    "position":"PhD Student",
+                    "photo":"assets/people/dipeshwor-shrestha.jpeg",
+                    "link":"",
+                    "email":"dipeshwor@karkhana.asia"
+                },
+                {
+                    "name":"Hyejin Im",
+                    "position":"Master's Student",
+                    "photo":"assets/people/hyejin-im.jpeg",
+                    "link":"https://hyejinim.github.io",
+                    "email":"hyejinim17@gmail.com"
+                },
+                {
+                    "name":"Hanna Khoury",
+                    "position":"Master's Student",
+                    "photo":"assets/people/hanna-khoury.jpeg",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"Olga Sans Copé",
+                    "position":"Visiting Researcher",
+                    "photo":"assets/people/olga-sans.jpeg",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        },
+        {
+            "id":"udergrads",
+            "members": [
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        },
+        {
+            "id":"collaborators",
+            "members": [
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        }
+    ],
     "projects":[
         {
             "id":"lego-engineering",
-            "title": "LEGO Engineering",
+            "title": "Solution Diversity in Engineering",
             "subtitle": "Development of extension application and educational tool to support advanced engineering learning and solution diversity with LEGO products",
             "teaser": "assets/lego-engineering/solution-diversity.jpeg",
             "tags":["robotics", "engineering", "AI", "solution diversity", "remote collaboration"],
@@ -305,7 +439,7 @@
         },
         {
             "name":"Alison Earnhart",
-            "position":"Outreach Support",
+            "position":"Project Administrator",
             "photo":"assets/people/alison-earnhart.jpeg",
             "link":"",
             "email":"",
