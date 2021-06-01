@@ -6,6 +6,140 @@
         "ceeologo":"assets/global/CEEO-logo.png",
         "links":""
     },
+    "people":[
+        {
+            "id":"principal-investigators",
+            "people": [
+                {
+                    "name":"Chris Rogers",
+                    "position":"Professor of Mechanical Engineering",
+                    "photo":"assets/people/chris-rogers.png",
+                    "link":"https://crogers.pages.tufts.edu/",
+                    "email":"crogers@tufts.edu"
+                },
+                {
+                    "name":"Ethan Danahy",
+                    "position":"Co-Principal Investigator, Associate Research Professor",
+                    "photo":"assets/people/ethan-danahy.jpeg",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        },
+        {
+            "id":"members-grads",
+            "people": [
+                {
+                    "name":"Jennifer Cross",
+                    "position":"Research Assistant Professor",
+                    "photo":"assets/people/jennifer-cross.jpeg",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"Lynne Ramsey",
+                    "position":"Operation Staff",
+                    "photo":"assets/people/lynne-ramsey.jpeg",
+                    "link":"https://ceeo.tufts.edu/people/staff/lynne-ramsey",
+                    "email":"lynne.ramsey@tufts.edu"
+                },
+                {
+                    "name":"Alison Earnhart",
+                    "position":"Project Administrator",
+                    "photo":"assets/people/alison-earnhart.jpeg",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"Sara Willner-Giwerc",
+                    "position":"PhD Student",
+                    "photo":"assets/people/sara-willner-giwerc.jpeg",
+                    "link":"",
+                    "email":"sara.willner_giwerc@tufts.edu"
+                },
+                {
+                    "name":"Ziyi Zhang",
+                    "position":"PhD Student",
+                    "photo":"assets/people/ziyi-zhang.jpeg",
+                    "link":"",
+                    "email":"ziyi.zhang@tufts.edu"
+                },
+                {
+                    "name":"Milan Dahal",
+                    "position":"PhD Student",
+                    "photo":"assets/people/milan-dahal.jpeg",
+                    "link":"",
+                    "email":"milan.dahal@tufts.edu"
+                },
+                {
+                    "name":"Dipeshwor Man Shrestha",
+                    "position":"PhD Student",
+                    "photo":"assets/people/dipeshwor-shrestha.jpeg",
+                    "link":"",
+                    "email":"dipeshwor@karkhana.asia"
+                },
+                {
+                    "name":"Hyejin Im",
+                    "position":"Master's Student",
+                    "photo":"assets/people/hyejin-im.jpeg",
+                    "link":"https://hyejinim.github.io",
+                    "email":"hyejinim17@gmail.com"
+                },
+                {
+                    "name":"Hanna Khoury",
+                    "position":"Master's Student",
+                    "photo":"assets/people/hanna-khoury.jpeg",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"Olga Sans Copé",
+                    "position":"Visiting Researcher",
+                    "photo":"assets/people/olga-sans.jpeg",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        },
+        {
+            "id":"udergrads",
+            "members": [
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        },
+        {
+            "id":"collaborators",
+            "members": [
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                },
+                {
+                    "name":"",
+                    "position":"",
+                    "photo":"",
+                    "link":"",
+                    "email":""
+                }
+            ]
+        }
+    ],
     "projects":[
         {
             "id":"lego-engineering",
@@ -212,104 +346,6 @@
                     "link": ""
                 }
             ]
-        }
-    ],
-    "people":[
-        {
-            "name":"Chris Rogers",
-            "position":"Co-Principal Investigator",
-            "photo":"assets/people/chris-rogers.png",
-            "link":"https://crogers.pages.tufts.edu/",
-            "email":"crogers@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Ethan Danahy",
-            "position":"Co-Principal Investigator, Associate Research Professor",
-            "photo":"assets/people/ethan-danahy.jpeg",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Jennifer Cross",
-            "position":"Research Assistant Professor",
-            "photo":"assets/people/jennifer-cross.jpeg",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Lynne Ramsey",
-            "position":"Operation Staff",
-            "photo":"assets/people/lynne-ramsey.jpeg",
-            "link":"https://ceeo.tufts.edu/people/staff/lynne-ramsey",
-            "email":"lynne.ramsey@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Sara Willner-Giwerc",
-            "position":"PhD Student",
-            "photo":"assets/people/sara-willner-giwerc.jpeg",
-            "link":"",
-            "email":"sara.willner_giwerc@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Ziyi Zhang",
-            "position":"PhD Student",
-            "photo":"assets/people/ziyi-zhang.jpeg",
-            "link":"",
-            "email":"ziyi.zhang@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Milan Dahal",
-            "position":"PhD Student",
-            "photo":"assets/people/milan-dahal.jpeg",
-            "link":"",
-            "email":"milan.dahal@tufts.edu",
-            "status": "Member"
-        },
-        {
-            "name":"Dipeshwor Man Shrestha",
-            "position":"PhD Student",
-            "photo":"assets/people/dipeshwor-shrestha.jpeg",
-            "link":"",
-            "email":"dipeshwor@karkhana.asia",
-            "status": "Member"
-        },
-        {
-            "name":"Hyejin Im",
-            "position":"Master's Student",
-            "photo":"assets/people/hyejin-im.jpeg",
-            "link":"https://hyejinim.github.io",
-            "email":"hyejinim17@gmail.com",
-            "status": "Member"
-        },
-        {
-            "name":"Hanna Khoury",
-            "position":"Master's Student",
-            "photo":"assets/people/hanna-khoury.jpeg",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Olga Sans Copé",
-            "position":"Visiting Researcher",
-            "photo":"assets/people/olga-sans.jpeg",
-            "link":"",
-            "email":"",
-            "status": "Member"
-        },
-        {
-            "name":"Alison Earnhart",
-            "position":"Project Administrator",
-            "photo":"assets/people/alison-earnhart.jpeg",
-            "link":"",
-            "email":"",
-            "status": "Member"
         }
     ]
 }
