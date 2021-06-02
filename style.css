@@ -518,10 +518,17 @@ section{
 
 .filter{
     margin: 1rem 0 1rem 0;
+    text-align: center;
+    position: relative;
+    /* margin-bottom: 2.5em;
+    margin-top: 2.5em; */
 }
+
 .filter label{
     padding: .2rem 0.5rem;
     margin: .2rem;
+    display: inline-block;
+    cursor: pointer;
 }
 /* .chip{
     display: inline-block;

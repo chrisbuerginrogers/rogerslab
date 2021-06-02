@@ -22,11 +22,7 @@ export function ProjectDetail(d){
             </div>
             
             <div class="project-tags"">
-                ${d.tags.map(tag=>`
-                    <span class="tag ${tag.toLowerCase()}">
-                        ${tag}
-                    </span>
-                `).join('')}
+                ${d.tags}
             </div>
         
         </div>
@@ -46,13 +42,7 @@ export function ProjectDetail(d){
         <div class="text-wrapper">
             <h2 class="title">PUBLICATIONS</h2>
             <div class="publication-list">
-                ${d.publications.map(p=>`
-                    <p>
-                        <a href="${p.link}" target="_blank">
-                        ${p.title}
-                        </a>
-                    </p>
-                `).join('')}
+                ${d.publications}
             </div>
         </div>
     </section>
@@ -61,24 +51,7 @@ export function ProjectDetail(d){
         <h2 class="title">RELATED PROJECTS</h2>
 
         <div class="project-list">
-            ${d.related.map(r=>`
-            <div class="project-box">
-                <img div class="teaser" src="${r.teaser}">
-                <div class="info">
-                    <div class="project-overview">
-                        <div class="project-title">
-                            <a href="?project=${r.link}"><strong>${r.title}</strong></a>
-                        </div>
-                        <div class="project-subtitle">
-                            ${r.desc}<br>
-                        </div>
-                        <div class="project-authors">
-                        ${r.authors}
-                        </div>
-                    </div>
-                </div>
-            </div>
-                `).join('')}
+            
         </div>
     </section>
     `

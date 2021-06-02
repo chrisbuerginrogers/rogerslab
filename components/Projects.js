@@ -3,7 +3,34 @@ export default function Projects(projects){
     return `
     
     <section id="projects">
-        <h1 class="title">MAIN RESEARCH PROJECTS</h1>
+        <h1 class="title">PROJECTS</h1>
+        <div class="filter">
+            
+            <label>
+            <input type="radio" name="project-filter" value="all">
+            All</label>
+
+            <label>
+            <input type="radio" name="project-filter" value="featured" checked>
+            Featured</label>
+            
+            <label>
+            <input type="radio" name="project-filter" value="grad">
+            Grad</label>
+            
+            <label>
+            <input type="radio" name="project-filter" value="undergrad">
+            Undergrad</label>
+            
+            <label>
+            <input type="radio" name="project-filter" value="archaived">
+            Archaived</label>
+
+            <label>
+            <input type="radio" name="project-filter" value="lego-funded">
+            LEGO-Funded</label>
+        
+        </div>
         <div class="project-list">
             ${ProjectItems(projects)}
         </div>
@@ -31,9 +58,8 @@ export function ProjectItems(projects){
 
 
 export function handleProjectFilter(data){
-
     
-    let conds = document.querySelectorAll('.filter input[name="filter"]');
+    let conds = document.querySelectorAll('.filter input[name="project-filter"]');
     console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
         
@@ -51,4 +77,9 @@ export function handleProjectFilter(data){
     
     }));
     
+}
+
+export function createTagArray(data){
+    let tagArr = data.projects.tags.split(',');
+    console.log(tagArr);
 }

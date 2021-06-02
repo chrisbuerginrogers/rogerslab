@@ -6,7 +6,6 @@ import Projects, {ProjectItems, handleProjectFilter} from './Projects.js';
 
 
 export default function MainPage(data){
-    
     document.querySelector('.container').innerHTML = `
         ${Navbar('main', Object.keys(data))}
         ${About(data.about)}

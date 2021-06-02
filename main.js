@@ -1,4 +1,20 @@
 
+fetch('assets/data.json')
+.then(resp=>resp.json())
+.then(data=>{
+    console.log('loaded:',data);
+    // determine what page to render
+    let params = new URLSearchParams(window.location.search);
+    if (params.get('project')==null){
+        MainPage(data);
+    }else{
+        let project = data.projects.find(d=>d.id===params.get('project'));
+        Navbar('project')
+        ProjectPage(project);
+    }    
+});
+
+
 
 fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQka0KPDQVSEPrSg9So_KLygCMEzDKTY0zNPJJiK2zqQbN4ykQeNFkOl85DAs9l-xi3r0hMz9_qa1Ix/pub?gid=0&single=true&output=csv')
 .then(resp=>resp.text())
