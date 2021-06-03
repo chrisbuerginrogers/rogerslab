@@ -16,15 +16,15 @@ export default function Projects(projects){
             
             <label>
             <input type="radio" name="project-filter" value="grad">
-            Grad</label>
+            Gradudate</label>
             
             <label>
             <input type="radio" name="project-filter" value="undergrad">
-            Undergrad</label>
+            Undergradudate</label>
             
             <label>
             <input type="radio" name="project-filter" value="archaived">
-            Archaived</label>
+            Archived</label>
 
             <label>
             <input type="radio" name="project-filter" value="lego-funded">

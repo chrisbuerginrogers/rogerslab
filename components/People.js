@@ -52,7 +52,10 @@ export function PeopleItems(people){
             </div>
             
             <div class="people-position">
-                ${d.position}
+                ${d.affiliation}
+            </div>
+            <div class="people-interests">
+                ${d.interests}
             </div>
         </div>
         `).join('');
