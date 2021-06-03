@@ -2,9 +2,11 @@ export default function Websites(websites){
     return `
 
     <section id="websites">
-        <h1 class="title">WEBSITES</h1>
-        <div class="project-list">
-            ${WebsiteItems(websites)}
+        <div class="wrapper">
+            <h1 class="title">WEBSITES</h1>
+            <div class="project-list">
+                ${WebsiteItems(websites)}
+            </div>
         </div>
     </section>`;
 }

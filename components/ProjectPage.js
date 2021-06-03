@@ -16,7 +16,7 @@ export default function ProjectPage(project, about){
 export function ProjectDetail(d){
     return `
     <section id="about" class="project-intro">
-        <div class="text-wrapper">
+        <div class="content-wrapper">
             <br>
             <h1 class="title" style="font-size: 3rem; margin-bottom: 10px; text-align: left;">${d.title}</h1>
             <div class="project-subtitle" style="color: #000000;">
@@ -27,26 +27,24 @@ export function ProjectDetail(d){
                 By ${d.authors}
             </div>
             <img src="${d.teaser}" div class="project-teaser">
+            <div class="row">
+            <div style="width: 50%;">
+            <img src="${d.image1}" div class="project-img">
+            <img src="${d.image3}" div class="project-img">
+            </div>
+            <div style="width: 50%;">
+            <img src="${d.image2}" div class="project-img">
+            <img src="${d.image4}" div class="project-img">
+            </div>
         </div>
-    </section>
-
-
-    <section id="overview">
-        <div class="text-wrapper">
-            <h2 class="title" style="text-align: left;">OVERVIEW</h2>
-            <p>
-                ${d.desc}
-            </p>
-        </div>
-    </section>
-
-    <section id="publications">
-        <div class="text-wrapper">
-            <div class="publication-list">
+        <p>
+            ${d.desc}
+        </p>
+        <div class="publication-list">
                 ${d.publications}
             </div>
         </div>
+       
     </section>
-
     `
 }

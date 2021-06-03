@@ -3,36 +3,38 @@ export default function Projects(projects){
     return `
     
     <section id="projects">
-        <h1 class="title">PROJECTS</h1>
-        <div class="filter">
-            
-            <label>
-            <input type="radio" name="project-filter" value="all">
-            All</label>
+        <div class="wrapper">
+            <h1 class="title">PROJECTS</h1>
+            <div class="filter">
+                
+                <label>
+                <input type="radio" name="project-filter" value="all">
+                All</label>
 
-            <label>
-            <input type="radio" name="project-filter" value="featured" checked>
-            Featured</label>
-            
-            <label>
-            <input type="radio" name="project-filter" value="grad">
-            Gradudate</label>
-            
-            <label>
-            <input type="radio" name="project-filter" value="undergrad">
-            Undergradudate</label>
-            
-            <label>
-            <input type="radio" name="project-filter" value="archaived">
-            Archived</label>
+                <label>
+                <input type="radio" name="project-filter" value="featured" checked>
+                Featured</label>
+                
+                <label>
+                <input type="radio" name="project-filter" value="grad">
+                Gradudate</label>
+                
+                <label>
+                <input type="radio" name="project-filter" value="undergrad">
+                Undergradudate</label>
+                
+                <label>
+                <input type="radio" name="project-filter" value="archaived">
+                Archived</label>
 
-            <label>
-            <input type="radio" name="project-filter" value="lego-funded">
-            LEGO-Funded</label>
-        
-        </div>
-        <div class="project-list">
-            ${ProjectItems(projects)}
+                <label>
+                <input type="radio" name="project-filter" value="lego-funded">
+                LEGO-Funded</label>
+            
+            </div>
+            <div class="project-list">
+                ${ProjectItems(projects)}
+            </div>
         </div>
     </section>`;
 }

@@ -141,19 +141,32 @@ section{
 
 .wrapper{
     margin: 0rem auto;
-    width: 80%;
+    width: 95%;
     
 }
 
+.content-wrapper{
+    margin: 0rem auto;
+    width: 80%;
+}
 .text-wrapper{
     width: 70%;
     margin: 0 auto;
 }
+
+.footer-content{
+    width: 40%;
+}
+
+.padding-right{
+    padding-right: 20px;
+}
 .row{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
-    margin 0 auto;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .people-list{
@@ -393,7 +406,7 @@ section{
 .project-teaser{
     /* border-radius: 5px; */
     width: 100%;
-    /* height: 500px; */
+    /* height: 50vh; */
     object-fit:cover;
     display: block;
     margin-left: auto;
@@ -413,6 +426,10 @@ section{
     /* margin-top: 20px;
     margin-bottom: 20px; */
     border: 0.5px solid rgb(233, 231, 231);
+}
+
+.project-img{
+    width: 100%;
 }
 
 .project-box{
@@ -510,6 +527,7 @@ section{
 }
 
 @media only screen and (min-width: 768px) {
+    /* 768 */
     .col-1 {flex-basis: 8.33%;}
     .col-2 {flex-basis: 16.66%;}
     .col-3 {flex-basis: 25%;}
@@ -522,12 +540,14 @@ section{
     .col-10 {flex-basis: 83.33%;}
     .col-11 {flex-basis: 91.66%;}
     .col-12 {flex-basis: 100%;}
-    
-
     #news .col-4 {
         text-align: right;
     }
 
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-content {width: 80%;}
 }
 
 .search {
