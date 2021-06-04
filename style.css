@@ -457,7 +457,7 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 .project-img-holder:nth-child(2n) {
