@@ -27,16 +27,12 @@ export function ProjectDetail(d){
                 By ${d.authors}
             </div>
             <img src="${d.teaser}" div class="project-teaser">
-            <div class="row">
-            <div style="width: 50%;">
-            <img src="${d.image1}" div class="project-img">
-            <img src="${d.image3}" div class="project-img">
+            <div class="project-img">
+                <img src="${d.image1}" div class="project-img-holder">
+                <img src="${d.image2}" div class="project-img-holder">
+                <img src="${d.image3}" div class="project-img-holder">
+                <img src="${d.image4}" div class="project-img-holder">
             </div>
-            <div style="width: 50%;">
-            <img src="${d.image2}" div class="project-img">
-            <img src="${d.image4}" div class="project-img">
-            </div>
-        </div>
         <p>
             ${d.desc}
         </p>

@@ -140,14 +140,19 @@ section{
 }
 
 .wrapper{
+    /* max-width: 1024px; */
     margin: 0rem auto;
-    width: 95%;
-    
+    width: 90%;
+    box-sizing: border-box;
 }
 
+.text-center{
+    text-align: center;
+}
 .content-wrapper{
     margin: 0rem auto;
-    width: 80%;
+    width: 70%;
+    box-sizing: border-box;
 }
 .text-wrapper{
     width: 70%;
@@ -155,7 +160,7 @@ section{
 }
 
 .footer-content{
-    width: 40%;
+    width: 30%;
 }
 
 .padding-right{
@@ -167,6 +172,7 @@ section{
     justify-content: center;
     margin: 0 auto;
     width: 100%;
+    
 }
 
 .people-list{
@@ -430,10 +436,36 @@ section{
 
 .project-img{
     width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.project-img-holder{
+    overflow: hidden;
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    /* margin: 0px auto; */
+    display: inline-block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+}
+
+.project-img-holder:nth-child(2n) {
+    margin-right: 0;
 }
 
 .project-box{
-    flex-basis: 20em;
+    flex-basis: 18em;
     border-radius: 5px;
     background-color:#fff;
     margin: 15px;
@@ -453,7 +485,7 @@ section{
 }
 
 .website-box{
-    flex-basis: 30em;
+    flex-basis: 18em;
     border-radius: 5px;
     background-color:#fff;
     margin: 15px;
@@ -515,7 +547,7 @@ section{
 }
 
 .logo{
-    width: 80%;
+    width: 100%;
     display: block;
 }
 
@@ -546,8 +578,9 @@ section{
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     .footer-content {width: 80%;}
+    .project-img-holder{width: 100%;}
 }
 
 .search {

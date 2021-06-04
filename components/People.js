@@ -5,7 +5,7 @@ export default function People(people){
     <section id="people">
         <div class="wrapper">
             <h1 class="title">PEOPLE</h1>
-            <div class="filter">
+            <div class="filter text-center">
             
                 <label>
                 <input type="radio" name="people-filter" value="all">

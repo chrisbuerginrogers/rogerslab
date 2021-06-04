@@ -4,6 +4,9 @@ export default function Websites(websites){
     <section id="websites">
         <div class="wrapper">
             <h1 class="title">WEBSITES</h1>
+            <p class="text-center">
+                Visit the websites we control
+            </p>
             <div class="project-list">
                 ${WebsiteItems(websites)}
             </div>

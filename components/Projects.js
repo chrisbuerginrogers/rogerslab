@@ -5,7 +5,7 @@ export default function Projects(projects){
     <section id="projects">
         <div class="wrapper">
             <h1 class="title">PROJECTS</h1>
-            <div class="filter">
+            <div class="filter text-center">
                 
                 <label>
                 <input type="radio" name="project-filter" value="all">
