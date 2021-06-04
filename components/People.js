@@ -12,8 +12,8 @@ export default function People(people){
                 All</label>
 
                 <label>
-                <input type="radio" name="people-filter" value="pi" checked>
-                Principal Investigators</label>
+                <input type="radio" name="people-filter" value="faculty" checked>
+                Faculty</label>
 
                 <label>
                 <input type="radio" name="people-filter" value="staff">
@@ -22,10 +22,14 @@ export default function People(people){
                 <label>
                 <input type="radio" name="people-filter" value="grad">
                 Graduate Researchers</label>
+
+                <label>
+                <input type="radio" name="people-filter" value="interns">
+                Visiting Researchers</label>
                 
                 <label>
                 <input type="radio" name="people-filter" value="interns">
-                Undergraduate Interns</label>
+                Interns</label>
                 
                 <label>
                 <input type="radio" name="people-filter" value="alumni">

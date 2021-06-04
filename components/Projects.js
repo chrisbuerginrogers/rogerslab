@@ -5,7 +5,7 @@ export default function Projects(projects){
     <section id="projects">
         <div class="wrapper">
             <h1 class="title">PROJECTS</h1>
-            <div class="filter text-center">
+            <div class="project-filter text-center">
                 
                 <label>
                 <input type="radio" name="project-filter" value="all">
@@ -23,6 +23,10 @@ export default function Projects(projects){
                 <input type="radio" name="project-filter" value="undergrad">
                 Undergradudate</label>
                 
+                <label>
+                <input type="radio" name="project-filter" value="active">
+                Active</label>
+
                 <label>
                 <input type="radio" name="project-filter" value="archaived">
                 Archived</label>
@@ -61,7 +65,7 @@ export function ProjectItems(projects){
 
 export function handleProjectFilter(data){
     
-    let conds = document.querySelectorAll('.filter input[name="project-filter"]');
+    let conds = document.querySelectorAll('.project-filter input[name="project-filter"]');
     console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
         
@@ -72,7 +76,7 @@ export function handleProjectFilter(data){
             let filtered = data.projects.filter(d=>{
                 return d.tags.some(tag=>checked === tag.toLowerCase());
             });
-            // console.log('filtered', filtered);
+            console.log('filtered', filtered);
         
             document.querySelector('.project-list').innerHTML = ProjectItems(filtered);
         }
