@@ -446,7 +446,7 @@ section{
 
 .project-img-holder{
     overflow: hidden;
-    width: 50%;
+    /* width: 50%; */
     margin-right: 15px;
     margin-bottom: 20px;
     /* margin: 0px auto; */
