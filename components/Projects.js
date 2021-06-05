@@ -64,7 +64,8 @@ export function ProjectItems(projects){
 
 
 export function handleProjectFilter(data){
-    
+    console.log(data.projects[0].tags);
+
     let conds = document.querySelectorAll('.project-filter input[name="project-filter"]');
     console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
@@ -86,6 +87,17 @@ export function handleProjectFilter(data){
 }
 
 export function createTagArray(data){
-    let tagArr = data.projects.tags.split(',');
+    const tagArr = data.projects.tags.split(',');
     console.log(tagArr);
+}
+
+export function listToArray(fullString, separator) {
+    const fullArray = [];
+
+    if (fullString !== undefined) {
+        if (fullString.indexOf(separator) == -1) {
+            fullArray.push(fullString).split(separator);
+        }
+    }
+    return fullArray;
 }

@@ -3,7 +3,7 @@ import About from './About.js';
 import Website from './Websites.js';
 import Footer from './Footer.js';
 import People from './People.js';
-import Projects, {ProjectItems, handleProjectFilter} from './Projects.js';
+import Projects, {ProjectItems, handleProjectFilter, createTagArray} from './Projects.js';
 
 
 export default function MainPage(data){
@@ -17,5 +17,6 @@ export default function MainPage(data){
     `
 
     handleProjectFilter(data);
+    createTagArray(data);
 }
 
