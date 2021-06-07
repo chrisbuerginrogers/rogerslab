@@ -7,12 +7,18 @@ export default function Navbar(page, items){
                     <a href="/rogerslab/#projects">FUTURE EDUCATIONAL TECHNOLOGY TECHNOLOGY LAB</a>
                 </li>`
            ):(
-                items.map(d=>
-                `<li>
-                    <a href="#${d}">${d.toUpperCase()}</a>
-                </li>
-                `).join('')
+            `<li>
+                <a href="#about">ABOUT</a>
+            </li>
+            <li>
+                <a href="#projects">PROJECTS</a>
+            </li>
+            <li>
+                <a href="#people">PEOPLE</a>
+            </li>
+            `
             )}
         </ul>
     </nav>`
 }
+
