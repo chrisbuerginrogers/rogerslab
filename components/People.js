@@ -5,7 +5,37 @@ export default function People(people){
     <section id="people">
         <div class="wrapper">
             <h1 class="title">PEOPLE</h1>
+            <div class="filter text-center">
             
+                <label>
+                <input type="radio" name="people-filter" value="all">
+                All</label>
+
+                <label>
+                <input type="radio" name="people-filter" value="faculty" checked>
+                Faculty</label>
+
+                <label>
+                <input type="radio" name="people-filter" value="staff">
+                Staff</label>
+                
+                <label>
+                <input type="radio" name="people-filter" value="grad">
+                Graduate Researchers</label>
+
+                <label>
+                <input type="radio" name="people-filter" value="interns">
+                Visiting Researchers</label>
+                
+                <label>
+                <input type="radio" name="people-filter" value="interns">
+                Interns</label>
+                
+                <label>
+                <input type="radio" name="people-filter" value="alumni">
+                Alumni</label>
+
+            </div>
             <div class="people-list">
                 ${PeopleItems(people)}
             </div>
