@@ -5,37 +5,7 @@ export default function Projects(projects){
     <section id="projects">
         <div class="wrapper">
             <h1 class="title">PROJECTS</h1>
-            <div class="project-filter text-center">
-                
-                <label>
-                <input type="radio" name="project-filter" value="all">
-                All</label>
-
-                <label>
-                <input type="radio" name="project-filter" value="featured" checked>
-                Featured</label>
-                
-                <label>
-                <input type="radio" name="project-filter" value="grad">
-                Gradudate</label>
-                
-                <label>
-                <input type="radio" name="project-filter" value="undergrad">
-                Undergradudate</label>
-                
-                <label>
-                <input type="radio" name="project-filter" value="active">
-                Active</label>
-
-                <label>
-                <input type="radio" name="project-filter" value="archaived">
-                Archived</label>
-
-                <label>
-                <input type="radio" name="project-filter" value="lego-funded">
-                LEGO-Funded</label>
-            
-            </div>
+           
             <div class="project-list">
                 ${ProjectItems(projects)}
             </div>
