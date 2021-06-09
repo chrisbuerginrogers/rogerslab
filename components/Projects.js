@@ -5,7 +5,7 @@ export default function Projects(projects){
     <section id="projects">
         <div class="wrapper">
             <h1 class="title">CURRENT PROJECTS</h1>
-           
+  
             <div class="project-list">
                 ${ProjectItems(projects)}
             </div>

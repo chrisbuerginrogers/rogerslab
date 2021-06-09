@@ -36,6 +36,7 @@ export function ProjectDetail(d){
             <img src="${d.image1}" div class="project-img-holder">
             <img src="${d.image2}" div class="project-img-holder">
         </div>
+        <img src="${d.image3}" div class="project-teaser">
 
         <div class="row">
             <div class="col-9">
