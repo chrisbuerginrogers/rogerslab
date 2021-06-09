@@ -47,9 +47,10 @@ export function ProjectDetail(d){
             <div class="col-3">
                 <p>
                     <strong>Links</strong> <br>
-                    <a href=${d.link1}" target="_blank">${d.link1label}</a><br>
-                    <a href=${d.link2}" target="_blank">${d.link2label}</a><br>
-                    <a href=${d.link3}" target="_blank">${d.link3label}</a>
+                    <a href="${d.link1}" target="_blank">${d.link1label}</a><br>
+                    <a href="${d.link2}" target="_blank">${d.link2label}</a><br>
+                    <a href="${d.link3}" target="_blank">${d.link3label}</a><br>
+                    <a href="${d.link4}" target="_blank">${d.link4label}</a>
                 </p>
             </div>
         </div>
