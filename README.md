@@ -1,6 +1,6 @@
 ## Link
 
-[Rogers Lab](https://hyejinim.github.io/rogerslab)
+[Future Educational Technology Lab](https://hyejinim.github.io/fetlab)
 
 ## Get Started
 
