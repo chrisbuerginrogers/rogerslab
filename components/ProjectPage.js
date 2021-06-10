@@ -32,11 +32,14 @@ export function ProjectDetail(d){
         </div>
         
         <img src="${d.teaser}" div class="project-teaser">
-        <div class="project-img">
-            <img src="${d.image1}" div class="project-img-holder">
-            <img src="${d.image2}" div class="project-img-holder">
-        </div>
+        <img src="${d.image1}" div class="project-teaser">
+        <img src="${d.image2}" div class="project-teaser">
         <img src="${d.image3}" div class="project-teaser">
+        <div class="project-img">
+            <img src="${d.smallimage1}" div class="project-img-holder">
+            <img src="${d.smallimage2}" div class="project-img-holder">
+        </div>
+    
 
         <div class="row">
             <div class="col-9">
@@ -51,7 +54,8 @@ export function ProjectDetail(d){
                     <a href="${d.link1}" target="_blank">${d.link1label}</a><br>
                     <a href="${d.link2}" target="_blank">${d.link2label}</a><br>
                     <a href="${d.link3}" target="_blank">${d.link3label}</a><br>
-                    <a href="${d.link4}" target="_blank">${d.link4label}</a>
+                    <a href="${d.link4}" target="_blank">${d.link4label}</a><br>
+                    <a href="${d.link5}" target="_blank">${d.link5label}</a>
                 </p>
             </div>
         </div>
