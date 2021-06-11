@@ -18,7 +18,7 @@ export function ProjectDetail(d){
     <section id="content" class="project-intro">
         <div class="content-wrapper">
             <br>
-            <h1 class="title" style="font-size: 3rem; margin-bottom: 10px; text-align: left;">${d.title}</h1>
+            <h1 class="title" style="margin-top: 40px; margin-bottom: 10px; text-align: left;">${d.title}</h1>
             <div class="project-subtitle" style="color: #000000;">
                 ${d.subtitle}
         </div>
@@ -46,7 +46,6 @@ export function ProjectDetail(d){
                 <p class="project-desc">
                     ${d.desc}
                 </p>
-                <br>
             </div>
             <div class="col-3">
                 <p>

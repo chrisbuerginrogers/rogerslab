@@ -658,8 +658,10 @@ color: #FEFA91;
     .footer-content {width: 80%;}
     .project-img-holder:nth-child(1n) {margin-right: 0;}
     .videoWrapper iframe{height: 300px}
-    .intro .title{font-size: 1.6rem;}
+    section .title{font-size: 1.6rem;}
+    .intro .title{font-size: 1.6rem; text-align: left;}
     .text-wrapper{width: 80%;}
+    .project-desc{margin-right: 0px;}
 }
 
 .search {

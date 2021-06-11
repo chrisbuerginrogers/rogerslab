@@ -4,7 +4,7 @@ export default function Navbar(page, items){
         <ul>
            ${page==='project'? (
                 `<li class="nav-title">
-                    <a href="/rogerslab/#projects">FUTURE EDUCATIONAL TECHNOLOGY TECHNOLOGY LAB</a>
+                    <a href="/rogerslab/#projects">FUTURE EDUCATIONAL TECHNOLOGY LAB</a>
                 </li>`
            ):(
             `<li>
