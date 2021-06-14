@@ -6,26 +6,26 @@ export default function Projects(projects){
         <div class="wrapper">
             <h1 class="title">CURRENT PROJECTS</h1>
             <div class="filter text-center">
-                <input type="radio" name="project-filter" id="item1" value="all" checked>
+                <input type="radio" name="project-filter" id="prj-item1" value="all" checked>
                 <label for="item1">All</label>
 
-                <input type="radio" name="project-filter" id="item2" value="featured" >
-                <label for="item2">Featured</label>
+                <input type="radio" name="project-filter" id="prj-item2" value="featured" >
+                <label for="prj-item2">Featured</label>
                 
-                <input type="radio" name="project-filter" id="item3" value="graduate">
-                <label for="item3">Gradudate</label>
+                <input type="radio" name="project-filter" id="prj-item3" value="graduate">
+                <label for="prj-item3">Gradudate</label>
                 
-                <input type="radio" name="project-filter" id="item4" value="undergraduate">
-                <label for="item4">Undergradudate</label>
+                <input type="radio" name="project-filter" id="prj-item4" value="undergraduate">
+                <label for="prj-item4">Undergradudate</label>
                 
-                <input type="radio" name="project-filter" id="item5" value="active">
-                <label for="item5">Active</label>
+                <input type="radio" name="project-filter" id="prj-item5" value="active">
+                <label for="prj-item5">Active</label>
 
-                <input type="radio" name="project-filter" id="item6" value="archaived">
-                <label for="item6">Archived</label>
+                <input type="radio" name="project-filter" id="prj-item6" value="archaived">
+                <label for="prj-item6">Archived</label>
 
-                <input type="radio" name="project-filter" id="item7" value="lego-funded">    
-                <label for="item7">LEGO-Funded</label>
+                <input type="radio" name="project-filter" id="prj-item7" value="lego-funded">    
+                <label for="prj-item7">LEGO-Funded</label>
             
             </div>
             <div class="project-list">
@@ -37,9 +37,21 @@ export default function Projects(projects){
 
 export function ProjectItems(projects){
     console.log(projects);
+
+    let getURL = (image)=>{
+        if (image===""){
+            return 'assets/global/headshot-placeholder.png';
+        }else if (image.startsWith("http") && image.includes("drive.google.com")){
+            const url = new URL(image);
+            const urlParams = new URLSearchParams(url.search);
+            return `https://drive.google.com/uc?export=view&id=${urlParams.get("id")}`;
+        }else{
+            return image;
+        }
+    }
     return projects.map(d=>`
         <div class="project-box">
-                <img src="${d.teaser}" div class="teaser">
+                <img src="${getURL(d.teaser)}" div class="teaser">
                 <div class="info">
                     <div class="project-overview">
                         <div class="project-title">
