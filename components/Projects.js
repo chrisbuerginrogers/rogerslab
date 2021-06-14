@@ -52,7 +52,7 @@ export function ProjectItems(projects){
     }
     return projects.map(d=>`
         <div class="project-box">
-                <img src="${getURL(d.teaser)}" div class="teaser">
+                <img src="${d.teaser}" div class="teaser">
                 <div class="info">
                     <div class="project-overview">
                         <div class="project-title">
@@ -69,7 +69,12 @@ export function ProjectItems(projects){
 }
 
 export function templateIdFrom(url) {
-
+    let parts = url.match(/\/d\/(.+)\//);
+    if (parts == null || parts.length < 2) {
+      return url;
+    } else {
+      return parts[1];
+    }
 }
 
 export function stringToArray(projects){
