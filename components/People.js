@@ -6,27 +6,26 @@ export default function People(people){
         <div class="wrapper">
             <h1 class="title">PEOPLE</h1>
             <div class="filter text-center">
-            
-                <label>
-                <input type="radio" name="people-filter" value="all" checked>All</label>
-
-                <label>
-                <input type="radio" name="people-filter" value="faculty" >Faculty</label>
-
-                <label>
-                <input type="radio" name="people-filter" value="staff">Staff</label>
+                <input type="radio" name="people-filter" id="item1" value="all" checked>
+                <label for="item1">All</label>
                 
-                <label>
-                <input type="radio" name="people-filter" value="graduate researchers">Graduate Researchers</label>
+                <input type="radio" name="people-filter" id="item2" value="faculty" >
+                <label for="item2">Faculty</label>
 
-                <label>
-                <input type="radio" name="people-filter" value="visiting researchers">Visiting Researchers</label>
+                <input type="radio" name="people-filter" id="item3" value="staff">
+                <label for="item3">Staff</label>
                 
-                <label>
-                <input type="radio" name="people-filter" value="interns">Interns</label>
+                <input type="radio" name="people-filter" id="item4" value="graduate researchers">
+                <label for="item4">Graduate Researchers</label>
+
+                <input type="radio" name="people-filter" id="item5" value="visiting researchers">
+                <label for="item5">Visiting Researchers</label>
                 
-                <label>
-                <input type="radio" name="people-filter" value="alumni">Alumni</label>
+                <input type="radio" name="people-filter" id="item6" value="interns">
+                <label for="item6">Interns</label>
+                
+                <input type="radio" name="people-filter" id="item7" value="alumni">
+                <label for="item7">Alumni</label>
 
             </div>
             <div class="people-list">

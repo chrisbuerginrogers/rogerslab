@@ -6,33 +6,26 @@ export default function Projects(projects){
         <div class="wrapper">
             <h1 class="title">CURRENT PROJECTS</h1>
             <div class="filter text-center">
-                <label>
-                <input type="radio" name="project-filter" value="all" checked>
-                All</label>
+                <input type="radio" name="project-filter" id="item1" value="all" checked>
+                <label for="item1">All</label>
 
-                <label>
-                <input type="radio" name="project-filter" value="featured" >
-                Featured</label>
+                <input type="radio" name="project-filter" id="item2" value="featured" >
+                <label for="item2">Featured</label>
                 
-                <label>
-                <input type="radio" name="project-filter" value="graduate">
-                Gradudate</label>
+                <input type="radio" name="project-filter" id="item3" value="graduate">
+                <label for="item3">Gradudate</label>
                 
-                <label>
-                <input type="radio" name="project-filter" value="undergraduate">
-                Undergradudate</label>
+                <input type="radio" name="project-filter" id="item4" value="undergraduate">
+                <label for="item4">Undergradudate</label>
                 
-                <label>
-                <input type="radio" name="project-filter" value="active">
-                Active</label>
+                <input type="radio" name="project-filter" id="item5" value="active">
+                <label for="item5">Active</label>
 
-                <label>
-                <input type="radio" name="project-filter" value="archaived">
-                Archived</label>
+                <input type="radio" name="project-filter" id="item6" value="archaived">
+                <label for="item6">Archived</label>
 
-                <label>
-                <input type="radio" name="project-filter" value="lego-funded">
-                LEGO-Funded</label>
+                <input type="radio" name="project-filter" id="item7" value="lego-funded">    
+                <label for="item7">LEGO-Funded</label>
             
             </div>
             <div class="project-list">
