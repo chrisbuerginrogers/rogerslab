@@ -6,26 +6,26 @@ export default function People(people){
         <div class="wrapper">
             <h1 class="title">PEOPLE</h1>
             <div class="filter text-center">
-                <input type="radio" name="people-filter" id="item1" value="all" checked>
+                <input type="radio" name="people-filter" id="ppl-item1" value="all" checked>
                 <label for="item1">All</label>
                 
-                <input type="radio" name="people-filter" id="item2" value="faculty" >
-                <label for="item2">Faculty</label>
+                <input type="radio" name="people-filter" id="ppl-item2" value="faculty" >
+                <label for="ppl-item2">Faculty</label>
 
-                <input type="radio" name="people-filter" id="item3" value="staff">
-                <label for="item3">Staff</label>
+                <input type="radio" name="people-filter" id="ppl-item3" value="staff">
+                <label for="ppl-item3">Staff</label>
                 
-                <input type="radio" name="people-filter" id="item4" value="graduate researchers">
-                <label for="item4">Graduate Researchers</label>
+                <input type="radio" name="people-filter" id="ppl-item4" value="graduate researchers">
+                <label for="ppl-item4">Graduate Researchers</label>
 
-                <input type="radio" name="people-filter" id="item5" value="visiting researchers">
-                <label for="item5">Visiting Researchers</label>
+                <input type="radio" name="people-filter" id="ppl-item5" value="visiting researchers">
+                <label for="ppl-item5">Visiting Researchers</label>
                 
-                <input type="radio" name="people-filter" id="item6" value="interns">
-                <label for="item6">Interns</label>
+                <input type="radio" name="people-filter" id="ppl-item6" value="interns">
+                <label for="ppl-item6">Interns</label>
                 
-                <input type="radio" name="people-filter" id="item7" value="alumni">
-                <label for="item7">Alumni</label>
+                <input type="radio" name="people-filter" id="ppl-item7" value="alumni">
+                <label for="ppl-item7">Alumni</label>
 
             </div>
             <div class="people-list">
