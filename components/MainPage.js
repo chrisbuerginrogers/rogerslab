@@ -2,8 +2,8 @@ import Navbar from './Navbar.js';
 import About from './About.js';
 import Website from './Websites.js';
 import Footer from './Footer.js';
-import People from './People.js';
-import Projects, {ProjectItems, handleProjectFilter, createTagArray} from './Projects.js';
+import People, {handlePeopleFilter} from './People.js';
+import Projects, {ProjectItems, stringToArray, handleProjectFilter} from './Projects.js';
 
 
 export default function MainPage(data){
@@ -15,8 +15,9 @@ export default function MainPage(data){
         ${People(data.people)}
         ${Footer(data.about)}
     `
-
+    stringToArray(data.projects);
+    stringToArray(data.people);
     handleProjectFilter(data);
-    createTagArray(data);
+    handlePeopleFilter(data);
 }
 

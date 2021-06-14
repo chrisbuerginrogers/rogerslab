@@ -5,22 +5,21 @@ export default function Projects(projects){
     <section id="projects">
         <div class="wrapper">
             <h1 class="title">CURRENT PROJECTS</h1>
-            <div class="project-filter text-center">
-                
+            <div class="filter text-center">
                 <label>
-                <input type="radio" name="project-filter" value="all">
+                <input type="radio" name="project-filter" value="all" checked>
                 All</label>
 
                 <label>
-                <input type="radio" name="project-filter" value="featured" checked>
+                <input type="radio" name="project-filter" value="featured" >
                 Featured</label>
                 
                 <label>
-                <input type="radio" name="project-filter" value="grad">
+                <input type="radio" name="project-filter" value="graduate">
                 Gradudate</label>
                 
                 <label>
-                <input type="radio" name="project-filter" value="undergrad">
+                <input type="radio" name="project-filter" value="undergraduate">
                 Undergradudate</label>
                 
                 <label>
@@ -44,6 +43,7 @@ export default function Projects(projects){
 }
 
 export function ProjectItems(projects){
+    console.log(projects);
     return projects.map(d=>`
         <div class="project-box">
                 <img src="${d.teaser}" div class="teaser">
@@ -62,11 +62,14 @@ export function ProjectItems(projects){
         `).join('');
 }
 
+export function stringToArray(projects){
+    projects.map(d => {
+        d.tags = d.tags.split(', ').map(s=>s.trim());
+    })
+}
 
 export function handleProjectFilter(data){
-    console.log(data.projects[0].tags);
-
-    let conds = document.querySelectorAll('.project-filter input[name="project-filter"]');
+    let conds = document.querySelectorAll('.filter input[name="project-filter"]');
     console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
         
@@ -84,20 +87,4 @@ export function handleProjectFilter(data){
     
     }));
     
-}
-
-export function createTagArray(data){
-    const tagArr = data.projects.tags.split(',');
-    console.log(tagArr);
-}
-
-export function listToArray(fullString, separator) {
-    const fullArray = [];
-
-    if (fullString !== undefined) {
-        if (fullString.indexOf(separator) == -1) {
-            fullArray.push(fullString).split(separator);
-        }
-    }
-    return fullArray;
 }

@@ -6,7 +6,7 @@ export default function Website(websites){
             <h1 class="title">PARTNER WEBSITES</h1>
             <p class="text-center">
             </p>
-            <div class="project-list">
+            <div class="website-list">
                 ${WebsiteItems(websites)}
             </div>
         </div>
