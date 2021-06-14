@@ -7,7 +7,7 @@ export default function Projects(projects){
             <h1 class="title">CURRENT PROJECTS</h1>
             <div class="filter text-center">
                 <input type="radio" name="project-filter" id="prj-item1" value="all" checked>
-                <label for="item1">All</label>
+                <label for="prj-item1">All</label>
 
                 <input type="radio" name="project-filter" id="prj-item2" value="featured" >
                 <label for="prj-item2">Featured</label>
@@ -69,12 +69,12 @@ export function ProjectItems(projects){
 }
 
 export function templateIdFrom(url) {
-    let parts = url.match(/\/d\/(.+)\//);
-    if (parts == null || parts.length < 2) {
-      return url;
-    } else {
-      return parts[1];
-    }
+    // let parts = url.match(/\/d\/(.+)\//);
+    // if (parts == null || parts.length < 2) {
+    //   return url;
+    // } else {
+    //   return parts[1];
+    // }
 }
 
 export function stringToArray(projects){
@@ -90,6 +90,7 @@ export function handleProjectFilter(data){
         
         let checked = event.target.value; //Array.from(conds).filter(d=>d.checked).map(d=>d.value);
         if (checked==='all'){
+            console.log('all clicked');
             document.querySelector('.project-list').innerHTML = ProjectItems(data.projects);
         }else{
             let filtered = data.projects.filter(d=>{
