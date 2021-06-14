@@ -13,10 +13,10 @@ export default function Projects(projects){
                 <label for="prj-item2">Featured</label>
                 
                 <input type="radio" name="project-filter" id="prj-item3" value="graduate">
-                <label for="prj-item3">Gradudate</label>
+                <label for="prj-item3">Graduate</label>
                 
                 <input type="radio" name="project-filter" id="prj-item4" value="undergraduate">
-                <label for="prj-item4">Undergradudate</label>
+                <label for="prj-item4">Undergraduate</label>
                 
                 <input type="radio" name="project-filter" id="prj-item5" value="active">
                 <label for="prj-item5">Active</label>
@@ -36,15 +36,16 @@ export default function Projects(projects){
 }
 
 export function ProjectItems(projects){
-    console.log(projects);
 
     let getURL = (image)=>{
         if (image===""){
-            return 'assets/global/headshot-placeholder.png';
+            return 'assets/global/project-placeholder.png';
         }else if (image.startsWith("http") && image.includes("drive.google.com")){
+            let id = "";
             const url = new URL(image);
-            const urlParams = new URLSearchParams(url.search);
-            return `https://drive.google.com/uc?export=view&id=${urlParams.get("id")}`;
+            id = templateIdFrom(url);
+            console.log('id: ' + id);
+            return `https://drive.google.com/uc?id=${id}`;
         }else{
             return image;
         }
@@ -65,6 +66,10 @@ export function ProjectItems(projects){
             </div> 
         </div>
         `).join('');
+}
+
+export function templateIdFrom(url) {
+
 }
 
 export function stringToArray(projects){
