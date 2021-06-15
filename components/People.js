@@ -1,4 +1,6 @@
 import MaterialIcon from './MaterialIcon.js';
+import templateIdFrom from './Projects.js';
+
 export default function People(people){
     return `
     
@@ -37,11 +39,23 @@ export default function People(people){
 }
 
 export function PeopleItems(people){
-    console.log(people);
+    let getHeadshotURL = (image)=>{
+        if (image===""){
+            return 'assets/global/headshot-placeholder.png';
+        }else if (image.startsWith("http") && image.includes("drive.google.com")){
+            let photoid = "";
+            const photourl = new URL(image);
+            photoid = imageIdFrom(photourl);
+            // console.log('id: ' + photoid);
+            return `https://drive.google.com/uc?id=${photoid}`;
+        }else{
+            return image;
+        }
+    }
     return people.map(d=>`
         
         <div class="people-item">
-            <img class="people-thumbnail"  src="${d.photo}">
+            <img class="people-thumbnail"  src="${getHeadshotURL(d.photo)}">
 
             
             <div class="people-name">
@@ -58,9 +72,18 @@ export function PeopleItems(people){
         `).join('');
 }
 
+
+export function imageIdFrom(url) {
+    url.toString();
+    let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
+    return match[1];
+    // 1. /([a-z0-9_-]{25,})[$/&?]/i
+    // 2. /\/d\/(.+)\//
+}
+
 export function handlePeopleFilter(data){
     let conds = document.querySelectorAll('.filter input[name="people-filter"]');
-    console.log(typeof conds);
+    // console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
         
         let checked = event.target.value; //Array.from(conds).filter(d=>d.checked).map(d=>d.value);

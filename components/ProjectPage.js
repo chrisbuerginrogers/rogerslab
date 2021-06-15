@@ -14,6 +14,17 @@ export default function ProjectPage(project, about){
 
 
 export function ProjectDetail(d){
+    let getImageURL = (image)=>{
+        if (image.startsWith("http") && image.includes("drive.google.com")){
+            let id = "";
+            const url = new URL(image);
+            id = fileIdFrom(url);
+            // console.log('id: ' + id);
+            return `https://drive.google.com/uc?id=${id}`;
+        }else{
+            return image;
+        }
+    }
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
@@ -31,10 +42,10 @@ export function ProjectDetail(d){
         ${d.video}
         </div>
         
-        <img src="${d.teaser}" div class="project-teaser">
-        <img src="${d.image1}" div class="project-teaser">
-        <img src="${d.image2}" div class="project-teaser">
-        <img src="${d.image3}" div class="project-teaser">
+        <img src="${getImageURL(d.teaser)}" div class="project-teaser">
+        <img src="${getImageURL(d.image1)}" div class="project-teaser">
+        <img src="${getImageURL(d.image2)}" div class="project-teaser">
+        <img src="${getImageURL(d.image3)}" div class="project-teaser">
         <div class="project-img">
             <img src="${d.smallimage1}" div class="project-img-holder">
             <img src="${d.smallimage2}" div class="project-img-holder">
@@ -61,4 +72,12 @@ export function ProjectDetail(d){
     
     </section>
     `
+}
+
+export function fileIdFrom(url) {
+    url.toString();
+    let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
+    return match[1];
+    // 1. /([a-z0-9_-]{25,})[$/&?]/i
+    // 2. /\/d\/(.+)\//
 }

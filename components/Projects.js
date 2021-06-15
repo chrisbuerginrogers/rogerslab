@@ -36,15 +36,14 @@ export default function Projects(projects){
 }
 
 export function ProjectItems(projects){
-
-    let getURL = (image)=>{
+    let getTeaserURL = (image)=>{
         if (image===""){
             return 'assets/global/project-placeholder.png';
         }else if (image.startsWith("http") && image.includes("drive.google.com")){
             let id = "";
             const url = new URL(image);
             id = templateIdFrom(url);
-            console.log('id: ' + id);
+            // console.log('id: ' + id);
             return `https://drive.google.com/uc?id=${id}`;
         }else{
             return image;
@@ -52,7 +51,7 @@ export function ProjectItems(projects){
     }
     return projects.map(d=>`
         <div class="project-box">
-                <img src="${d.teaser}" div class="teaser">
+                <img src="${getTeaserURL(d.teaser)}" div class="teaser">
                 <div class="info">
                     <div class="project-overview">
                         <div class="project-title">
@@ -69,12 +68,11 @@ export function ProjectItems(projects){
 }
 
 export function templateIdFrom(url) {
-    // let parts = url.match(/\/d\/(.+)\//);
-    // if (parts == null || parts.length < 2) {
-    //   return url;
-    // } else {
-    //   return parts[1];
-    // }
+    url.toString();
+    let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
+    return match[1];
+    // 1. /([a-z0-9_-]{25,})[$/&?]/i
+    // 2. /\/d\/(.+)\//
 }
 
 export function stringToArray(projects){
@@ -85,7 +83,7 @@ export function stringToArray(projects){
 
 export function handleProjectFilter(data){
     let conds = document.querySelectorAll('.filter input[name="project-filter"]');
-    console.log(typeof conds);
+    // console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
         
         let checked = event.target.value; //Array.from(conds).filter(d=>d.checked).map(d=>d.value);
