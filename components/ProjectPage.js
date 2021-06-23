@@ -39,9 +39,6 @@ export function ProjectDetail(d){
         </div>
         
         <div class="videoWrapper">
-        ${d.video}
-        </div>
-        <div class="videoWrapper">
             ${d.video}
         </div>
         
