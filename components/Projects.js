@@ -18,9 +18,6 @@ export default function Projects(projects){
                 <input type="radio" name="project-filter" id="prj-item4" value="undergraduate">
                 <label for="prj-item4">Undergraduate</label>
                 
-                <input type="radio" name="project-filter" id="prj-item5" value="active">
-                <label for="prj-item5">Active</label>
-
                 <input type="radio" name="project-filter" id="prj-item6" value="archaived">
                 <label for="prj-item6">Archived</label>
 
