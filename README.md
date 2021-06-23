@@ -8,5 +8,5 @@
 3. Create your project folder with your project id under the `assets` folder and upload all images and videos of your projects
 
 ## Acknowledgement
-This website is built and managed by Hyejin.
+This website is built and managed by Hyejin Im.
 Thanks to Nam Wook Kim for the original website templates.
