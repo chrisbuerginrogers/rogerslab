@@ -9,4 +9,4 @@
 
 ## Acknowledgement
 This website is built and managed by Hyejin Im.
-Thanks to Nam Wook Kim for the original website templates.
+Thanks to Nam Wook Kim for the idea of [Data-Driven website](https://github.com/namwkim/namwkim.github.io) and the [original website template](https://www.notion.so/Lab-Modules-0bf0039f4b224ac0bfec6b2bd49010c0).
