@@ -42,14 +42,7 @@ export function ProjectDetail(d){
         ${d.video}
         </div>
         <div class="videoWrapper">
-        https://youtu.be/rG1Bxqu5y0s
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rG1Bxqu5y0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width='640px' height='360px' src='${d.testvideo}' frameborder='0' allowfullscreen></iframe></textarea>
-        </div>
-        <div class="videoWrapper">
-        https://drive.google.com/file/d/1aYrAGKDNsuvxzcxIjFiZz4dOnSPv-jq_/view?usp=sharing
-        <iframe src="https://drive.google.com/file/d/1aYrAGKDNsuvxzcxIjFiZz4dOnSPv-jq_/preview?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <iframe src="${d.testvideo}/preview?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            ${d.video}
         </div>
         
         <img src="${getImageURL(d.teaser)}" div class="project-teaser">
