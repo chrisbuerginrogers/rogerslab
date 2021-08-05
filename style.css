@@ -150,9 +150,8 @@ section{
     text-align: center;
 }
 .content-wrapper{
-
     max-width: 2024px; 
-    margin: 0rem auto;
+    margin: 2rem auto 0rem auto;
     width: 95%;
     box-sizing: border-box;
 }
@@ -605,6 +604,26 @@ color: #FEFA91;
 .logo{
     width: 100%;
     display: block;
+}
+
+.project-link{
+    /* background-color: #ececec; */
+    /* padding: 10px; */
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 0 30px 0;
+    /* margin: 0px 50px 0px 0px; */
+    display: flex;
+}
+
+.project-link a {
+    display: inline;
+    background-color: #3F7BE0;
+    margin: 0px 10px 0px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
 }
 
 .website-teaser{

@@ -38,24 +38,20 @@ export function ProjectDetail(d){
                     <div class="project-tags" style="color: #a7a6a6;">
                         By ${d.authors}
                     </div>
+                    <div class="project-link">
+                        ${LinkButton(d.link1, d.link1label)}
+                        ${LinkButton(d.link2, d.link2label)}
+                        ${LinkButton(d.link3, d.link3label)}
+                        ${LinkButton(d.link4, d.link4label)}
+                        ${LinkButton(d.link5, d.link5label)}
+                    </div>
                     <p class="project-desc">
                         ${d.desc}
-                    </p>
-                    <p>
-                        <strong>Links</strong> <br>
-                        <a href="${d.link1}" target="_blank">${d.link1label}</a><br>
-                        <a href="${d.link2}" target="_blank">${d.link2label}</a><br>
-                        <a href="${d.link3}" target="_blank">${d.link3label}</a><br>
-                        <a href="${d.link4}" target="_blank">${d.link4label}</a><br>
-                        <a href="${d.link5}" target="_blank">${d.link5label}</a>
                     </p>
                 </div>
                 <div class="col-7">
                     <br>
-                    <div class="videoWrapper">
-                        ${GetEmbedVideo(d.video)}
-                    </div>
-                    
+                    ${GetEmbedVideo(d.video)}
                     <img src="${getImageURL(d.teaser)}" div class="project-teaser">
                     <img src="${getImageURL(d.image1)}" div class="project-teaser">
                     <img src="${getImageURL(d.image2)}" div class="project-teaser">
@@ -86,13 +82,23 @@ export function GetEmbedVideo(video){
         const url = new URL(video); 
         const urlParams = new URLSearchParams(url.search);
         if (urlParams.get("id")){
-            return `<iframe id="current" src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe>`;
+            return `<div class="videoWrapper"><iframe id="current" src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe></div>`;
         }else{
             const id = video.split('/').slice(-2)[0];// second from last
-            return `<iframe id="current" src="https://drive.google.com/file/d/${id}/preview" width="640" height="480"></iframe>`;
+            return `<div class="videoWrapper"><iframe id="current" src="https://drive.google.com/file/d/${id}/preview" width="640" height="480"></iframe></div>`;
         }
 
     }else{
         return video;
+    }
+}
+
+export function LinkButton(label, link) {
+    if (label===""){
+        return '';
+    }else {
+        return `
+            <a class="link-button" href="${label}" target="_blank">${link}</a>
+        `
     }
 }
