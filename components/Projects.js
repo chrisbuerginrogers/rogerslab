@@ -11,6 +11,9 @@ export default function Projects(projects){
 
                 <input type="radio" name="project-filter" id="prj-item2" value="featured" >
                 <label for="prj-item2">Featured</label>
+
+                <input type="radio" name="project-filter" id="prj-item6" value="active">
+                <label for="prj-item6">Active</label>
                 
                 <input type="radio" name="project-filter" id="prj-item3" value="graduate">
                 <label for="prj-item3">Graduate</label>
@@ -18,12 +21,6 @@ export default function Projects(projects){
                 <input type="radio" name="project-filter" id="prj-item4" value="undergraduate">
                 <label for="prj-item4">Undergraduate</label>
                 
-                <input type="radio" name="project-filter" id="prj-item6" value="archaived">
-                <label for="prj-item6">Archived</label>
-
-                <input type="radio" name="project-filter" id="prj-item7" value="lego-funded">    
-                <label for="prj-item7">LEGO-Funded</label>
-            
             </div>
             <div class="project-list">
                 ${ProjectItems(projects)}
