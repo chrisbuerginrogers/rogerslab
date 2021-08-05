@@ -80,6 +80,7 @@ nav a:hover{
 }
 
 nav ul{
+    z-index: 1000;
     list-style-type: none;
     margin: 0;
     padding: 1rem;
@@ -391,12 +392,6 @@ section{
     /* font-size: 1.4rem; */
 }
 
-.project-tags{
-    margin: 0px;
-    /* margin-top: 20px; */
-    /* text-align: center; */
-}
-
 .project-desc{
     /* margin-top: 80px; */
     margin-right: 100px;
@@ -491,6 +486,7 @@ section{
 }
 
 .project-box{
+    position: relative;
     flex-basis: 18em;
     border-radius: 5px;
     background-color:#fff;
@@ -672,6 +668,20 @@ color: #FEFA91;
     height: 100% !important;
   }
 
+.project-tags {
+    /* font-family: 'DM Sans', 'Helvetica', sans-serif; */
+    font-size: 1rem;
+    padding: 0rem .4rem;
+    border-radius: 5px;
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+    background-color: rgba(212, 211, 211, 0.404);
+    color: #fff;
+    font-weight: bold;
+  }
 @media only screen and (min-width: 768px) {
     /* 768 */
     .col-1 {flex-basis: 8.33%;}

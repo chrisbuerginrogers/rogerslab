@@ -12,8 +12,8 @@ export default function Projects(projects){
                 <input type="radio" name="project-filter" id="prj-item2" value="featured" >
                 <label for="prj-item2">Featured</label>
 
-                <input type="radio" name="project-filter" id="prj-item6" value="active">
-                <label for="prj-item6">On-going</label>
+                <input type="radio" name="project-filter" id="prj-item6" value="ongoing">
+                <label for="prj-item6">Ongoing</label>
                 
                 <input type="radio" name="project-filter" id="prj-item3" value="graduate">
                 <label for="prj-item3">Graduate</label>
@@ -48,6 +48,9 @@ export function ProjectItems(projects){
                 <img src="${getTeaserURL(d.teaser)}" div class="teaser">
                 <div class="info">
                     <div class="project-overview">
+                        <div class="project-tags">
+                            ${d.year}
+                        </div>
                         <div class="project-title">
                             <a href="?project=${d.id}"><strong>${d.title}</strong></a>
                         </div>
@@ -61,6 +64,9 @@ export function ProjectItems(projects){
         `).join('');
 }
 
+export function Tag(tags){
+
+}
 export function templateIdFrom(url) {
     url.toString();
     let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
