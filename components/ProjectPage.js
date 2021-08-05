@@ -99,7 +99,11 @@ export function EmbedVideo(video){
         }
 
     }else{
-        return video;
+        return `
+            <div class="videoWrapper">
+                ${video}
+            </div>
+        `
     }
 }
 
