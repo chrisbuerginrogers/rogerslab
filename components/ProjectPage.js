@@ -39,7 +39,7 @@ export function ProjectDetail(d){
         </div>
         
         <div class="videoWrapper">
-            ${d.video}
+            ${GetEmbedVideo(d.video)}
         </div>
         
         <img src="${getImageURL(d.teaser)}" div class="project-teaser">
@@ -80,4 +80,23 @@ export function fileIdFrom(url) {
     return match[1];
     // 1. /([a-z0-9_-]{25,})[$/&?]/i
     // 2. /\/d\/(.+)\//
+}
+
+export function GetEmbedVideo(video){
+    if (video===""){
+        return '';
+    }else if (video.startsWith("http") && video.includes("drive.google.com")){
+        // for Google Form auto-generated link
+        const url = new URL(video); 
+        const urlParams = new URLSearchParams(url.search);
+        if (urlParams.get("id")){
+            return `<iframe id="current" src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe>`;
+        }else{
+            const id = video.split('/').slice(-2)[0];// second from last
+            return `<iframe id="current" src="https://drive.google.com/file/d/${id}/preview" width="640" height="480"></iframe>`;
+        }
+
+    }else{
+        return video;
+    }
 }
