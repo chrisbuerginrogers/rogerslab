@@ -28,48 +28,44 @@ export function ProjectDetail(d){
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
-            <br>
-            <h1 class="title" style="margin-top: 40px; margin-bottom: 10px; text-align: left;">${d.title}</h1>
-            <div class="project-subtitle" style="color: #000000;">
-                ${d.subtitle}
-        </div>
-            
-        <div class="project-tags" style="color: #a7a6a6;">
-            By ${d.authors}
-        </div>
-        
-        <div class="videoWrapper">
-            ${GetEmbedVideo(d.video)}
-        </div>
-        
-        <img src="${getImageURL(d.teaser)}" div class="project-teaser">
-        <img src="${getImageURL(d.image1)}" div class="project-teaser">
-        <img src="${getImageURL(d.image2)}" div class="project-teaser">
-        <img src="${getImageURL(d.image3)}" div class="project-teaser">
-        <div class="project-img">
-            <img src="${d.smallimage1}" div class="project-img-holder">
-            <img src="${d.smallimage2}" div class="project-img-holder">
-        </div>
-    
-
-        <div class="row">
-            <div class="col-9">
-                <p class="project-desc">
-                    ${d.desc}
-                </p>
+            <div class="row">
+                <div class="col-5">
+                    <br>
+                    <h1 class="title" style="margin-top: 40px; margin-bottom: 10px; text-align: left;">${d.title}</h1>
+                    <div class="project-subtitle" style="color: #000000;">
+                        ${d.subtitle}
+                    </div>
+                    <div class="project-tags" style="color: #a7a6a6;">
+                        By ${d.authors}
+                    </div>
+                    <p class="project-desc">
+                        ${d.desc}
+                    </p>
+                    <p>
+                        <strong>Links</strong> <br>
+                        <a href="${d.link1}" target="_blank">${d.link1label}</a><br>
+                        <a href="${d.link2}" target="_blank">${d.link2label}</a><br>
+                        <a href="${d.link3}" target="_blank">${d.link3label}</a><br>
+                        <a href="${d.link4}" target="_blank">${d.link4label}</a><br>
+                        <a href="${d.link5}" target="_blank">${d.link5label}</a>
+                    </p>
+                </div>
+                <div class="col-7">
+                    <br>
+                    <div class="videoWrapper">
+                        ${GetEmbedVideo(d.video)}
+                    </div>
+                    
+                    <img src="${getImageURL(d.teaser)}" div class="project-teaser">
+                    <img src="${getImageURL(d.image1)}" div class="project-teaser">
+                    <img src="${getImageURL(d.image2)}" div class="project-teaser">
+                    <img src="${getImageURL(d.image3)}" div class="project-teaser">
+                    <img src="${getImageURL(d.image4)}" div class="project-teaser">
+                    <img src="${getImageURL(d.image5)}" div class="project-teaser">
+                </div>
             </div>
-            <div class="col-3">
-                <p>
-                    <strong>Links</strong> <br>
-                    <a href="${d.link1}" target="_blank">${d.link1label}</a><br>
-                    <a href="${d.link2}" target="_blank">${d.link2label}</a><br>
-                    <a href="${d.link3}" target="_blank">${d.link3label}</a><br>
-                    <a href="${d.link4}" target="_blank">${d.link4label}</a><br>
-                    <a href="${d.link5}" target="_blank">${d.link5label}</a>
-                </p>
-            </div>
+                
         </div>
-    
     </section>
     `
 }
