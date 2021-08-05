@@ -13,7 +13,7 @@ export default function Projects(projects){
                 <label for="prj-item2">Featured</label>
 
                 <input type="radio" name="project-filter" id="prj-item6" value="active">
-                <label for="prj-item6">Active</label>
+                <label for="prj-item6">On-Going</label>
                 
                 <input type="radio" name="project-filter" id="prj-item3" value="graduate">
                 <label for="prj-item3">Graduate</label>
