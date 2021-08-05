@@ -5,7 +5,7 @@ html, body {
 
 body {
     /* font-family: 'Roboto', "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
-    font-family: 'Inter', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Roboto','Inter', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     /* Questrial  Manrope   Gothic A1  Inter font-family: 'Google Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
     font-size: calc(1.1 * 1rem);
     line-height: 1.8em;
@@ -23,7 +23,7 @@ body {
 
 
 section .title{
-    font-family: 'Press Start 2P', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'DM Sans', 'Press Start 2P', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     /* VT323   Press Start 2P   Lexend*/
     font-size: 1.8rem;
     text-align: center;
@@ -32,8 +32,9 @@ section .title{
 }
 
 .nav-title{
-    font-family: 'Press Start 2P', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.8rem;
+    font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .container{
@@ -103,6 +104,7 @@ nav ul{
 
 
 li a {
+    font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     margin-right:1.5rem;
     text-decoration: none;
     color: #fff;
@@ -112,7 +114,7 @@ footer{
     padding: 2rem;
     margin: 0;
     /* justify-content: center; */
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(17, 17, 24);
     /* width: 100%; */
     /* bottom:0;
     left:0; */
@@ -157,6 +159,7 @@ section{
     box-sizing: border-box;
 }
 .text-wrapper{
+    max-width: 1024px;
     width: 70%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -238,10 +241,11 @@ section{
 }
 
 .people-name{
+    font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     text-align: left;
     font-size: 1.2rem;
     line-height: 1.4rem;
-    margin: 10px 10px;
+    margin: 20px 20px 10px 20px;
     /* font-family: 'Press Start 2P', "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
     /* font-size: 0.8rem; */
 }
@@ -255,19 +259,20 @@ section{
     color: #3F7BE0;
 }
 .people-position{
+    font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     text-align: left;
     font-size: 1.1rem;
     /* color: #acacac; */
     line-height: 1.4rem;
-    margin: 10px 10px;
+    margin: 0px 20px 10px 20px;
 }
 
 .people-interests{
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #acacac;
     line-height: 1.4rem;
-    margin: 10px 10px;
+    margin: 0px 20px 20px 20px;
 }
 
 #about .col-6:nth-child(1){
@@ -293,8 +298,9 @@ section{
 }
 
 .project-title{
+    font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.35rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .project-title a:hover{
@@ -389,6 +395,7 @@ section{
 .project-subtitle{
     /* text-align: center; */
     color: #a7a6a6;
+    line-height: 1.4em;
     /* font-size: 1.4rem; */
 }
 
@@ -626,6 +633,16 @@ color: #FEFA91;
     font-size: 0.9rem;
 }
 
+.project-link a:hover {
+    display: inline;
+    background-color: rgb(14, 54, 124);
+    margin: 0px 10px 0px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
 .website-teaser{
     border-radius: 5px 5px 0px 0px;
     width: 100%;
@@ -669,7 +686,7 @@ color: #FEFA91;
   }
 
 .project-tags {
-    /* font-family: 'DM Sans', 'Helvetica', sans-serif; */
+    font-family: 'DM Sans', 'Helvetica', sans-serif;
     font-size: 1rem;
     padding: 0rem .4rem;
     border-radius: 5px;
@@ -731,6 +748,7 @@ color: #FEFA91;
 }
 
 .filter{
+    font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     margin: 1rem 0 1rem 0;
     text-align: center;
     position: relative;

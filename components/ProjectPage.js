@@ -38,13 +38,7 @@ export function ProjectDetail(d){
                         <div class="project-tags" style="color: #a7a6a6;">
                             By ${d.authors}
                         </div>
-                        <div class="project-link">
-                            ${LinkButton(d.link1, d.link1label)}
-                            ${LinkButton(d.link2, d.link2label)}
-                            ${LinkButton(d.link3, d.link3label)}
-                            ${LinkButton(d.link4, d.link4label)}
-                            ${LinkButton(d.link5, d.link5label)}
-                        </div>
+                        ${ProjectLinks(d)}
                         <p class="project-desc">
                             ${d.desc}
                         </p>
@@ -105,6 +99,23 @@ export function EmbedVideo(video){
             </div>
         `
     }
+}
+
+export function ProjectLinks(d) {
+    if (d.link1==="") {
+        return '';
+    }else {
+        return `
+            <div class="project-link">
+                ${LinkButton(d.link1, d.link1label)}
+                ${LinkButton(d.link2, d.link2label)}
+                ${LinkButton(d.link3, d.link3label)}
+                ${LinkButton(d.link4, d.link4label)}
+                ${LinkButton(d.link5, d.link5label)}
+            </div>
+        `
+    }
+
 }
 
 export function LinkButton(label, link) {
