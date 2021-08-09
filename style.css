@@ -231,13 +231,13 @@ section{
     position: relative;
     box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
     border-radius: 5px;
-    flex-basis: 8em;
+    flex-basis: 7em;
     /* width: 30%; */
     /* padding: 15px; */
-    margin-bottom: 40px;
+    /* margin-bottom: 30px; */
     /* margin-left: 12px;
     margin-right: 12px; */
-    margin: 15px;
+    margin: 10px;
     
     /* flex-basis: auto; */
     /* justify-content: center; */
@@ -247,18 +247,23 @@ section{
     flex-shrink: 0;
 }
 
+.alumni-item .people-name{
+    font-size: 1.1rem;
+}
+
+.alumni-item .people-position{
+    font-size: 1rem;
+}
+
 .alumni-thumbnail{
     display: block;
     border-radius: 5px 5px 0px 0px;
-    /* width: 800px; */
-    /* height:370px; */
-    /* flex-basis: 6em; */
     object-fit:cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 140px;
+    height: 110px;
     object-fit: cover;
 }
 

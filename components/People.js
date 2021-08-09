@@ -96,12 +96,6 @@ export function AlumniItems(people){
         
         <div class="alumni-item">
             <img class="alumni-thumbnail"  src="${getHeadshotURL(d.photo)}">
-            <div class="overlay">
-                <div class="people-interests">
-                    ${d.interests}
-                </div>
-            </div>
-            
             <div class="people-name">
                 <a href="${d.link}" target="_blank">${d.name}</a>
             </div>
