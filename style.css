@@ -227,6 +227,41 @@ section{
     box-shadow: 0 10px 20px rgb(0 0 0 / 30%);
 }
 
+.alumni-item{
+    position: relative;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    flex-basis: 8em;
+    /* width: 30%; */
+    /* padding: 15px; */
+    margin-bottom: 40px;
+    /* margin-left: 12px;
+    margin-right: 12px; */
+    margin: 15px;
+    
+    /* flex-basis: auto; */
+    /* justify-content: center; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.alumni-thumbnail{
+    display: block;
+    border-radius: 5px 5px 0px 0px;
+    /* width: 800px; */
+    /* height:370px; */
+    /* flex-basis: 6em; */
+    object-fit:cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
 .people-thumbnail{
     display: block;
     border-radius: 5px 5px 0px 0px;

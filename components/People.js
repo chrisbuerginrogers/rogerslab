@@ -95,7 +95,7 @@ export function AlumniItems(people){
     return people.map(d=>`
         
         <div class="alumni-item">
-            <img class="people-thumbnail"  src="${getHeadshotURL(d.photo)}">
+            <img class="alumni-thumbnail"  src="${getHeadshotURL(d.photo)}">
             <div class="overlay">
                 <div class="people-interests">
                     ${d.interests}

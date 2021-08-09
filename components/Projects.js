@@ -12,10 +12,10 @@ export default function Projects(projects){
                 <input type="radio" name="project-filter" id="prj-item1" value="all">
                 <label for="prj-item1">All</label>
 
-                <input type="radio" name="project-filter" id="prj-item2" value="featured" checked>
+                <input type="radio" name="project-filter" id="prj-item2" value="featured">
                 <label for="prj-item2">Featured</label>
 
-                <input type="radio" name="project-filter" id="prj-item3" value="ongoing">
+                <input type="radio" name="project-filter" id="prj-item3" value="ongoing" checked>
                 <label for="prj-item3">Ongoing</label>
 
                 <input type="radio" name="project-filter" id="prj-item4" value="completed">
