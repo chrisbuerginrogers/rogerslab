@@ -2,6 +2,10 @@ import MaterialIcon from './MaterialIcon.js';
 import templateIdFrom from './Projects.js';
 
 export default function People(people){
+    let currentMembers = people.filter(d=>{
+        return d.status === 'Member';
+    });
+
     return `
     
     <section id="people">
@@ -31,7 +35,7 @@ export default function People(people){
 
             </div>
             <div class="people-list">
-                ${PeopleItems(people)}
+                ${PeopleItems(currentMembers)}
             </div>
         </div>
 
@@ -88,12 +92,22 @@ export function handlePeopleFilter(data){
         
         let checked = event.target.value; //Array.from(conds).filter(d=>d.checked).map(d=>d.value);
         if (checked==='all'){
-            document.querySelector('.people-list').innerHTML = PeopleItems(data.people);
+            let filtered = data.people.filter(d=>{
+                return d.status === 'Member';
+            });
+        
+            document.querySelector('.people-list').innerHTML = PeopleItems(filtered);
+            // document.querySelector('.people-list').innerHTML = PeopleItems(data.people);
+        }else if (checked==='alumni') {
+            let filtered = data.people.filter(d=>{
+                return d.status === 'Alumni';
+            });
+            console.log(filtered);
+            document.querySelector('.people-list').innerHTML = PeopleItems(filtered);
         }else{
             let filtered = data.people.filter(d=>{
                 return d.tags.some(tag=>checked === tag.toLowerCase());
             });
-            console.log('filtered', filtered);
         
             document.querySelector('.people-list').innerHTML = PeopleItems(filtered);
         }
