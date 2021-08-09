@@ -35,10 +35,10 @@ export function ProjectDetail(d){
                         <div class="project-subtitle" style="color: #000000;">
                             ${d.subtitle}
                         </div>
-                        <div class="project-tags" style="color: #a7a6a6;">
+                        ${ProjectLinks(d)}
+                        <div class="project-authors" style="color: #a7a6a6;">
                             By ${d.authors}
                         </div>
-                        ${ProjectLinks(d)}
                         <p class="project-desc">
                             ${d.desc}
                         </p>

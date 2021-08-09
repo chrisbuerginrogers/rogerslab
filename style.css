@@ -449,15 +449,12 @@ section{
 
 .project-authors{
     color: #bdbbbb;
-    margin-top: 15px;
-    /* text-align: center; */
+    margin-bottom: 30px;
 }
 
 .project-subtitle{
-    /* text-align: center; */
     color: #a7a6a6;
     line-height: 1.4em;
-    /* font-size: 1.4rem; */
 }
 
 .project-desc{
@@ -679,7 +676,7 @@ color: #FEFA91;
     /* padding: 10px; */
     width: 100%;
     border-radius: 15px;
-    margin: 10px 0 40px 0;
+    margin: 10px 0 10px 0;
     /* margin: 0px 50px 0px 0px; */
     display: flex;
 }
@@ -751,7 +748,7 @@ color: #FEFA91;
     font-size: 1rem;
     padding: 0rem .4rem;
     border-radius: 5px;
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
     top: 10px;
     left: 10px;
