@@ -202,9 +202,10 @@ section{
 }
 
 .people-item{
+    position: relative;
     box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
     border-radius: 5px;
-    flex-basis: 12em;
+    flex-basis: 11em;
     /* width: 30%; */
     /* padding: 15px; */
     margin-bottom: 40px;
@@ -227,6 +228,7 @@ section{
 }
 
 .people-thumbnail{
+    display: block;
     border-radius: 5px 5px 0px 0px;
     /* width: 800px; */
     /* height:370px; */
@@ -240,6 +242,20 @@ section{
     object-fit: cover;
 }
 
+.people-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;height: 100%;
+    width: 100%;
+    height: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.3);
+}
 .people-name{
     font-family: 'DM Sans', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     text-align: left;
@@ -268,11 +284,20 @@ section{
 }
 
 .people-interests{
+    box-sizing: border-box;
     text-align: left;
-    font-size: 1rem;
-    color: #acacac;
+    font-size: 0.9rem;
+    color: #fff;
     line-height: 1.4rem;
-    margin: 0px 20px 20px 20px;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #about .col-6:nth-child(1){

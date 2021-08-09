@@ -1,15 +1,18 @@
 import MaterialIcon from './MaterialIcon.js';
 export default function Projects(projects){
+    let FeaturedProjects = projects.filter(d=>{
+        return d.tag3 === 'Featured';
+    });
     return `
     
     <section id="projects">
         <div class="wrapper">
             <h1 class="title">CURRENT PROJECTS</h1>
             <div class="filter text-center">
-                <input type="radio" name="project-filter" id="prj-item1" value="all" checked>
+                <input type="radio" name="project-filter" id="prj-item1" value="all">
                 <label for="prj-item1">All</label>
 
-                <input type="radio" name="project-filter" id="prj-item2" value="featured" >
+                <input type="radio" name="project-filter" id="prj-item2" value="featured" checked>
                 <label for="prj-item2">Featured</label>
 
                 <input type="radio" name="project-filter" id="prj-item3" value="ongoing">
@@ -26,7 +29,7 @@ export default function Projects(projects){
                 
             </div>
             <div class="project-list">
-                ${ProjectItems(projects)}
+                ${ProjectItems(FeaturedProjects)}
             </div>
         </div>
     </section>`;

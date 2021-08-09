@@ -60,7 +60,11 @@ export function PeopleItems(people){
         
         <div class="people-item">
             <img class="people-thumbnail"  src="${getHeadshotURL(d.photo)}">
-
+            <div class="overlay">
+                <div class="people-interests">
+                    ${d.interests}
+                </div>
+            </div>
             
             <div class="people-name">
                 <a href="${d.link}" target="_blank">${d.name}</a>
@@ -69,9 +73,7 @@ export function PeopleItems(people){
             <div class="people-position">
                 ${d.affiliation}
             </div>
-            <div class="people-interests">
-                ${d.interests}
-            </div>
+            
         </div>
         `).join('');
 }
