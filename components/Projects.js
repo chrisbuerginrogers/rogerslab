@@ -1,7 +1,7 @@
 import MaterialIcon from './MaterialIcon.js';
 export default function Projects(projects){
     let FeaturedProjects = projects.filter(d=>{
-        return d.tag3 === 'Featured';
+        return d.tag2 === 'Ongoing';
     });
     return `
     

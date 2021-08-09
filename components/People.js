@@ -78,6 +78,42 @@ export function PeopleItems(people){
         `).join('');
 }
 
+export function AlumniItems(people){
+    let getHeadshotURL = (image)=>{
+        if (image===""){
+            return 'assets/global/headshot-placeholder.png';
+        }else if (image.startsWith("http") && image.includes("drive.google.com")){
+            let photoid = "";
+            const photourl = new URL(image);
+            photoid = imageIdFrom(photourl);
+            // console.log('id: ' + photoid);
+            return `https://drive.google.com/uc?id=${photoid}`;
+        }else{
+            return image;
+        }
+    }
+    return people.map(d=>`
+        
+        <div class="alumni-item">
+            <img class="people-thumbnail"  src="${getHeadshotURL(d.photo)}">
+            <div class="overlay">
+                <div class="people-interests">
+                    ${d.interests}
+                </div>
+            </div>
+            
+            <div class="people-name">
+                <a href="${d.link}" target="_blank">${d.name}</a>
+            </div>
+            
+            <div class="people-position">
+                ${d.tags}
+            </div>
+            
+        </div>
+        `).join('');
+}
+
 
 export function imageIdFrom(url) {
     url.toString();
@@ -105,7 +141,7 @@ export function handlePeopleFilter(data){
                 return d.status === 'Alumni';
             });
             console.log(filtered);
-            document.querySelector('.people-list').innerHTML = PeopleItems(filtered);
+            document.querySelector('.people-list').innerHTML = AlumniItems(filtered);
         }else{
             let filtered = data.people.filter(d=>{
                 return d.tags.some(tag=>checked === tag.toLowerCase());
