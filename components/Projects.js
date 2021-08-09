@@ -12,14 +12,17 @@ export default function Projects(projects){
                 <input type="radio" name="project-filter" id="prj-item2" value="featured" >
                 <label for="prj-item2">Featured</label>
 
-                <input type="radio" name="project-filter" id="prj-item6" value="ongoing">
-                <label for="prj-item6">Ongoing</label>
+                <input type="radio" name="project-filter" id="prj-item3" value="ongoing">
+                <label for="prj-item3">Ongoing</label>
+
+                <input type="radio" name="project-filter" id="prj-item4" value="completed">
+                <label for="prj-item4">Completed</label>
                 
-                <input type="radio" name="project-filter" id="prj-item3" value="graduate">
-                <label for="prj-item3">Graduate</label>
+                <input type="radio" name="project-filter" id="prj-item5" value="graduate">
+                <label for="prj-item5">Graduate</label>
                 
-                <input type="radio" name="project-filter" id="prj-item4" value="undergraduate">
-                <label for="prj-item4">Undergraduate</label>
+                <input type="radio" name="project-filter" id="prj-item6" value="undergraduate">
+                <label for="prj-item6">Undergraduate</label>
                 
             </div>
             <div class="project-list">
