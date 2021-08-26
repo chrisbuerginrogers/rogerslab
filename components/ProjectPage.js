@@ -14,17 +14,6 @@ export default function ProjectPage(project, about){
 
 
 export function ProjectDetail(d){
-    let getImageURL = (image)=>{
-        if (image.startsWith("http") && image.includes("drive.google.com")){
-            let id = "";
-            const url = new URL(image);
-            id = fileIdFrom(url);
-            // console.log('id: ' + id);
-            return `https://drive.google.com/uc?id=${id}`;
-        }else{
-            return image;
-        }
-    }
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
@@ -48,17 +37,25 @@ export function ProjectDetail(d){
                     <br>
                     ${EmbedVideo(d.video)}
                     <img src="${getImageURL(d.teaser)}" div class="project-teaser">
-                    <img src="${getImageURL(d.image1)}" div class="project-teaser">
-                    <img src="${getImageURL(d.image2)}" div class="project-teaser">
-                    <img src="${getImageURL(d.image3)}" div class="project-teaser">
-                    <img src="${getImageURL(d.image4)}" div class="project-teaser">
-                    <img src="${getImageURL(d.image5)}" div class="project-teaser">
+                    ${ProjectImages(d)}
                 </div>
             </div>
                 
         </div>
     </section>
     `
+}
+
+export function getImageURL(image) {
+    if (image.startsWith("http") && image.includes("drive.google.com")){
+        let id = "";
+        const url = new URL(image);
+        id = fileIdFrom(url);
+        // console.log('id: ' + id);
+        return `https://drive.google.com/uc?id=${id}`;
+    }else{
+        return image;
+    }
 }
 
 export function fileIdFrom(url) {
@@ -97,6 +94,72 @@ export function EmbedVideo(video){
             <div class="videoWrapper">
                 ${video}
             </div>
+        `
+    }
+}
+
+export function ProjectImages(d) {
+    if (d.image1==="") {
+        return '';
+    }else if (d.image2==="") {
+        return `
+            <img src="${getImageURL(d.image1)}" div class="project-teaser">
+            <p class="caption">${d.image1caption}</p>
+        `
+    }else if (d.image3==="") {
+        return `
+            <img src="${getImageURL(d.image1)}" div class="project-teaser">
+            <p class="caption">${d.image1caption}</p>
+            <img src="${getImageURL(d.image2)}" div class="project-teaser">
+            <p class="caption">${d.image2caption}</p>
+        `
+    }else if (d.image4==="") {
+        return `
+            <img src="${getImageURL(d.image1)}" div class="project-teaser">
+            <p class="caption">${d.image1caption}</p>
+            <img src="${getImageURL(d.image2)}" div class="project-teaser">
+            <p class="caption">${d.image2caption}</p>
+            <img src="${getImageURL(d.image3)}" div class="project-teaser">
+            <p class="caption">${d.image3caption}</p>
+        `
+    }else if (d.image5==="") {
+        return `
+            <img src="${getImageURL(d.image1)}" div class="project-teaser">
+            <p class="caption">${d.image1caption}</p>
+            <img src="${getImageURL(d.image2)}" div class="project-teaser">
+            <p class="caption">${d.image2caption}</p>
+            <img src="${getImageURL(d.image3)}" div class="project-teaser">
+            <p class="caption">${d.image3caption}</p>
+            <img src="${getImageURL(d.image4)}" div class="project-teaser">
+            <p class="caption">${d.image4caption}</p>
+        `
+    }else if (d.image6==="") {
+        return `
+            <img src="${getImageURL(d.image1)}" div class="project-teaser">
+            <p class="caption">${d.image1caption}</p>
+            <img src="${getImageURL(d.image2)}" div class="project-teaser">
+            <p class="caption">${d.image2caption}</p>
+            <img src="${getImageURL(d.image3)}" div class="project-teaser">
+            <p class="caption">${d.image3caption}</p>
+            <img src="${getImageURL(d.image4)}" div class="project-teaser">
+            <p class="caption">${d.image4caption}</p>
+            <img src="${getImageURL(d.image5)}" div class="project-teaser">
+            <p class="caption">${d.image5caption}</p>
+        `
+    }else if (d.image6!=="") {
+        return `
+            <img src="${getImageURL(d.image1)}" div class="project-teaser">
+            <p class="caption">${d.image1caption}</p>
+            <img src="${getImageURL(d.image2)}" div class="project-teaser">
+            <p class="caption">${d.image2caption}</p>
+            <img src="${getImageURL(d.image3)}" div class="project-teaser">
+            <p class="caption">${d.image3caption}</p>
+            <img src="${getImageURL(d.image4)}" div class="project-teaser">
+            <p class="caption">${d.image4caption}</p>
+            <img src="${getImageURL(d.image5)}" div class="project-teaser">
+            <p class="caption">${d.image5caption}</p>
+            <img src="${getImageURL(d.image6)}" div class="project-teaser">
+            <p class="caption">${d.image6caption}</p>
         `
     }
 }
