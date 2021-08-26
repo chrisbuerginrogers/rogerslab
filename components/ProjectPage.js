@@ -147,6 +147,8 @@ export function ProjectImages(d) {
             <p class="caption">${d.image5caption}</p>
         `
     }else if (d.image6!=="") {
+        console.log(d.image6);
+        console.log(d.image6caption);
         return `
             <img src="${getImageURL(d.image1)}" div class="project-teaser">
             <p class="caption">${d.image1caption}</p>

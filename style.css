@@ -452,6 +452,11 @@ section{
     margin: 0 0.5rem 0 0; 
 }
 
+.caption{
+    color: #a7a6a6;
+    text-align: center;
+}
+
 .project-authors{
     color: #bdbbbb;
     margin-bottom: 30px;
