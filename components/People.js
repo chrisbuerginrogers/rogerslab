@@ -10,7 +10,7 @@ export default function People(people){
     
     <section id="people">
         <div class="wrapper">
-            <h1 class="title">PEOPLE</h1>
+            <h1 class="title">People</h1>
             <div class="filter text-center">
                 <input type="radio" name="people-filter" id="ppl-item1" value="all" checked>
                 <label for="ppl-item1">All</label>

@@ -2,10 +2,8 @@ import Navbar from './Navbar.js';
 import About from './About.js';
 import Website from './Websites.js';
 import Footer from './Footer.js';
-import Projects, {ProjectItems, stringToArray, templateIdFrom, handleProjectFilter} from './Projects.js';
-import People, {PeopleItems, handlePeopleFilter} from './People.js';
-
-
+import Projects, {stringToArray, handleProjectFilter} from './Projects.js';
+import People, {handlePeopleFilter} from './People.js';
 
 export default function MainPage(data){
     document.querySelector('.container').innerHTML = `

@@ -4,8 +4,6 @@ import ProjectPage from './components/ProjectPage.js';
 import Navbar from './components/Navbar.js';
 import People from './components/People.js';
 
-
-
 Promise.all([
       d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSDp2eohTdft9FqTUidRuLgD675fvlOm653imLF6lS5oAfjGZFkNzYmREdS5cu0yQvUeEhlqaD4TffR/pub?output=csv"),
       d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTU27Jgb4L1K2x0BIIj_1ykcwRYBk7HYthA8dy5vqRgyxsj519xImlZAck34ju4hrDKJl0lhM5SDQM7/pub?output=csv"),
