@@ -13,15 +13,15 @@
 - Create your project folder with your project id under the `assets` folder and upload images/videos of your projects
 
 ## Google Drive Structure
-.  
-|-- assets: directory with any images/videos needed  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-name: images/videos for a specific project  
+.   
 |-- Links: doc contains links to the website and GitHub page  
 |-- about: spreadsheets contain basic information about the website  
 |-- people: spreadsheets contain personal information of the lab members  
 |-- projects: spreadsheets contain project information created at the lab  
 |-- websites: spreadsheets contain partner website informatiion   
+|-- assets: directory with any images/videos needed  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-name: images/videos for a specific project 
 
 ## Source Code Directory Structure
 --
