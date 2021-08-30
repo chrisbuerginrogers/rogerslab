@@ -20,8 +20,8 @@
 |-- projects: spreadsheets that contain project information created at the lab  
 |-- websites: spreadsheets that contain partner website informatiion   
 |-- assets: directory with any images/videos needed  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-id: images/videos for a specific project 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-id: images/videos for a specific project  
 
 ## Source Code Directory Structure
 .  
