@@ -12,7 +12,19 @@
 - Upload your headshot image to `assets/people` folder
 - Create your project folder with your project id under the `assets` folder and upload images/videos of your projects
 
-## Data Structure
+## Google Drive Structure
+./
+|-- assets: directory with any images/videos needed/
+      |-- people: headshot images/
+      |-- project-name: images/videos for a specific project/
+|-- Links: doc contains links to the website and GitHub page
+|-- about: spreadsheets contain basic information about the website
+|-- people: spreadsheets contain personal information of the lab members
+|-- projects: spreadsheets contain project information created at the lab
+|-- websites: spreadsheets contain partner website informatiion 
+
+## Source Code Directory Structure
+--
 
 ## Acknowledgement
 This website is built and managed by [Hyejin Im](https://hyejinim.github.io).
