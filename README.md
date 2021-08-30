@@ -3,7 +3,7 @@
 * [Data (Google Drive)](https://drive.google.com/drive/folders/14_Pz8O_YQauf5cpMfGmqNgqhk9FnoIfN?usp=sharing)
 
 ## How to Add Your Data
-1. Go to the [FET lab Google Drive](https://drive.google.com/drive/folders/14_Pz8O_YQauf5cpMfGmqNgqhk9FnoIfN?usp=sharing). To access this folder, you should use CEEO Google account (FirstName.LastName@tuftsceeo.org)
+1. Go to the [FET Lab Google Drive](https://drive.google.com/drive/folders/14_Pz8O_YQauf5cpMfGmqNgqhk9FnoIfN?usp=sharing). To access this folder, you should use CEEO Google account (FirstName.LastName@tuftsceeo.org)
 2. Add data
 - Add personal information to the `people` spreadsheets
 - Add project information to the `projects` spreadsheets  
