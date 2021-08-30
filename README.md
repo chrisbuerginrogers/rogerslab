@@ -21,17 +21,19 @@
 |-- websites: spreadsheets that contain partner website informatiion   
 |-- assets: directory with any images/videos needed  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-name: images/videos for a specific project 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-id: images/videos for a specific project 
 
 ## Source Code Directory Structure
 .  
--- README.md  
--- index.html  
--- index.js: main javascript file that loads the .csv files and populate the data into the webpage automatically  
--- main.js: generate home page  
--- style.css  
--- components: folder contains modular javascript files  
--- assets  
+|-- README.md  
+|-- index.html: main html file  
+|-- index.js: main javascript file that loads the .csv files and populate the data into the webpage automatically  
+|-- main.js: generate home page  
+|-- style.css  
+|-- components: folder contains modular javascript files which we will import later into the the main page with JavaScript
+|-- assets: directory with any files  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- global: logos and icons that are used across the site
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-id: images/videos for a specific project (alternative of GDrive if necessary)
 
 ## Acknowledgement
 This website is built and managed by [Hyejin Im](https://hyejinim.github.io).
