@@ -14,17 +14,24 @@
 
 ## Google Drive Structure
 .   
-|-- Links: doc contains links to the website and GitHub page  
-|-- about: spreadsheets contain basic information about the website  
-|-- people: spreadsheets contain personal information of the lab members  
-|-- projects: spreadsheets contain project information created at the lab  
-|-- websites: spreadsheets contain partner website informatiion   
+|-- Links: doc that contains links to the website and GitHub page  
+|-- about: spreadsheets that contain basic information about the website  
+|-- people: spreadsheets that contain personal information of the lab members  
+|-- projects: spreadsheets that contain project information created at the lab  
+|-- websites: spreadsheets that contain partner website informatiion   
 |-- assets: directory with any images/videos needed  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-name: images/videos for a specific project 
 
 ## Source Code Directory Structure
---
+.
+-- README.md
+-- index.html
+-- index.js: main javascript file that loads the .csv files and populate the data into the webpage automatically
+-- main.js: generate home page
+-- style.css
+-- components: folder contains modular javascript files
+-- assets
 
 ## Acknowledgement
 This website is built and managed by [Hyejin Im](https://hyejinim.github.io).
