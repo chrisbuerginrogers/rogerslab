@@ -9,7 +9,7 @@
 - Add project information to the `projects` spreadsheets  
 *You can find tips if you hover cells on top. Refer to tips when you fill out each data  
 3. Upload files (e.g., images, videos, gifs) to the `assets` folder, get a sharable link, and paste to the spreadsheets
-- Upload your headshot image to `assets/people` folder
+- Upload your headshot image to the `assets/people` folder
 - Create your project folder with your project id under the `assets` folder and upload images/videos of your projects
 
 ## Google Drive Structure
