@@ -28,7 +28,7 @@
 |-- README.md  
 |-- index.html: main html file  
 |-- index.js: main javascript file that loads the .csv files and populate the data into the webpage automatically  
-|-- main.js: generate the main page (home)
+|-- main.js: generate the main page (home)  
 |-- style.css  
 |-- components: folder contains modular javascript files which we will import later into the the main page  
 |-- assets: directory with any files  
