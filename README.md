@@ -30,7 +30,7 @@
 |-- index.js: main javascript file that loads the .csv files and populate the data into the webpage automatically  
 |-- main.js: generate home page  
 |-- style.css  
-|-- components: folder contains modular javascript files which we will import later into the the main page with JavaScript
+|-- components: folder contains modular javascript files which we will import later into the the main page  
 |-- assets: directory with any files  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- global: logos and icons that are used across the site
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-id: images/videos for a specific project (alternative of GDrive if necessary)
