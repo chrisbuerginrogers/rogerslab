@@ -15,8 +15,8 @@
 ## Google Drive Structure
 .  
 |-- assets: directory with any images/videos needed  
-&nbsp;|-- people: headshot images  
-&nbsp;|-- project-name: images/videos for a specific project  
+&nbsp;&nbsp;&nbsp;&nbsp;|-- people: headshot images  
+&nbsp;&nbsp;&nbsp;&nbsp;|-- project-name: images/videos for a specific project  
 |-- Links: doc contains links to the website and GitHub page  
 |-- about: spreadsheets contain basic information about the website  
 |-- people: spreadsheets contain personal information of the lab members  
