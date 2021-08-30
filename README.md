@@ -32,7 +32,7 @@
 |-- style.css  
 |-- components: folder contains modular javascript files which we will import later into the the main page  
 |-- assets: directory with any files  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- global: logos and icons that are used across the site
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- global: logos and icons that are used across the site  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- project-id: images/videos for a specific project (alternative of GDrive if necessary)
 
 ## Acknowledgement
