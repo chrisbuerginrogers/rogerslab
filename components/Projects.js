@@ -96,7 +96,11 @@ export function handleProjectFilter(data){
         let checked = event.target.value; //Array.from(conds).filter(d=>d.checked).map(d=>d.value);
         if (checked==='all'){
             console.log('all clicked');
-            document.querySelector('.project-list').innerHTML = ProjectItems(data.projects);
+            let FeaturedProjects = data.projects.filter(d=>{
+                return d.tag2 !== 'Private'; // hide private projects
+            });
+            
+            document.querySelector('.project-list').innerHTML = ProjectItems(FeaturedProjects);
         }else{
             let filtered = data.projects.filter(d=>{
                 return d.tags.some(tag=>checked === tag.toLowerCase());
