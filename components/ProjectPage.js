@@ -31,6 +31,7 @@ export function ProjectDetail(d){
                         <p class="project-desc">
                             ${d.desc}
                         </p>
+                        ${CodeSnippet(d.code)}
                     </div>
                 </div>
                 <div class="col-7">
@@ -190,5 +191,16 @@ export function LinkButton(label, link) {
         return `
             <a class="link-button" href="${label}" target="_blank">${link}</a>
         `
+    }
+}
+
+export function CodeSnippet(code){
+    if (code==="") {
+        return '';
+    }else {
+        return `
+        <h4>Code</h4>
+            <pre><code class="python">${code}</code></pre>
+        `;
     }
 }

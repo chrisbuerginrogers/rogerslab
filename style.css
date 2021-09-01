@@ -472,6 +472,18 @@ section{
     margin-right: 100px;
 }
 
+code {
+    border-radius: 15px;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    display: flex-root;
+    clear: both;
+    width: 100%;
+    background: #eee;
+}
+
 .project-list{
     display: flex; 
     display: -webkit-flex;
