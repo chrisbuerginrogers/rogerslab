@@ -1,3 +1,4 @@
+// return HTML for navigation section
 export default function Navbar(page, items){
     return `
     <nav class="navbar">

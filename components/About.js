@@ -1,3 +1,4 @@
+// return HTML for about section
 export default function About(about){
     return `
     <section id="about" class="intro">

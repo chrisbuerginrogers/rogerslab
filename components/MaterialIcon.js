@@ -1,3 +1,4 @@
+// place an icon using font awesome web font (https://fontawesome.com)
 export default function MaterialIcon(type){
     switch (type){
         case 'Paper':

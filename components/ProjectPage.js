@@ -1,9 +1,9 @@
-import MaterialIcon from './MaterialIcon.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
+import fileIdFrom, {getImageURL} from './Images.js';
+import MaterialIcon from './MaterialIcon.js';
 
-
-
+// create project detail page
 export default function ProjectPage(project, about){
     document.querySelector('.container').innerHTML = `
         ${Navbar('project')}
@@ -12,7 +12,7 @@ export default function ProjectPage(project, about){
     `
 }
 
-
+// return HTML for project content section
 export function ProjectDetail(d){
     return `
     <section id="content" class="project-intro">
@@ -47,50 +47,29 @@ export function ProjectDetail(d){
     `
 }
 
-export function getImageURL(image) {
-    if (image.startsWith("http") && image.includes("drive.google.com")){
-        let id = "";
-        const url = new URL(image);
-        id = fileIdFrom(url);
-        // console.log('id: ' + id);
-        return `https://drive.google.com/uc?id=${id}`;
-    }else{
-        return image;
-    }
-}
-
-export function fileIdFrom(url) {
-    url.toString();
-    let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
-    return match[1];
-    // 1. /([a-z0-9_-]{25,})[$/&?]/i
-    // 2. /\/d\/(.+)\//
-}
-
+// return HTML to display video
 export function EmbedVideo(video){
     console.log(video);
-    if (video===""){
+    if (video===""){ // in case of no video
         return '';
-    }else if (video.startsWith("http") && video.includes("drive.google.com")){
-        // for Google Form auto-generated link
+    }else if (video.startsWith("http") && video.includes("drive.google.com")){ // in case of google link
         const url = new URL(video); 
         const urlParams = new URLSearchParams(url.search);
-        if (urlParams.get("id")){
+        if (urlParams.get("id")){ // google form auto-generated link
             return `
                 <div class="videoWrapper">
                     <iframe id="current" src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe>
                 </div>
             `
         }else{
-            const id = video.split('/').slice(-2)[0];// second from last
+            const id = fileIdFrom(video); // other google links
             return `
                 <div class="videoWrapper">
                     <iframe id="current" src="https://drive.google.com/file/d/${id}/preview" width="640" height="480"></iframe>
                 </div>
             `
         }
-
-    }else{
+    }else{ // in case of embed code
         return `
             <div class="videoWrapper">
                 ${video}
@@ -99,6 +78,8 @@ export function EmbedVideo(video){
     }
 }
 
+// return HTML to display images
+// @improve shorten the code
 export function ProjectImages(d) {
     if (d.image1==="") {
         return '';
@@ -148,8 +129,6 @@ export function ProjectImages(d) {
             <p class="caption">${d.image5caption}</p>
         `
     }else if (d.image6!=="") {
-        console.log(d.image6);
-        console.log(d.image6caption);
         return `
             <img src="${getImageURL(d.image1)}" div class="project-teaser">
             <p class="caption">${d.image1caption}</p>
@@ -167,6 +146,7 @@ export function ProjectImages(d) {
     }
 }
 
+// return HTML to add buttons
 export function ProjectLinks(d) {
     if (d.link1==="") {
         return '';
@@ -178,12 +158,13 @@ export function ProjectLinks(d) {
                 ${LinkButton(d.link3, d.link3label)}
                 ${LinkButton(d.link4, d.link4label)}
                 ${LinkButton(d.link5, d.link5label)}
+                ${LinkButton(d.link5, d.link6label)}
             </div>
         `
     }
-
 }
 
+// add a button only if there is a link
 export function LinkButton(label, link) {
     if (label===""){
         return '';
@@ -194,6 +175,7 @@ export function LinkButton(label, link) {
     }
 }
 
+// return HTML to print python code with syntax highlighting
 export function CodeSnippet(code){
     if (code==="") {
         return '';

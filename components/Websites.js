@@ -1,15 +1,17 @@
+// return HTML for the partner website section
 export default function Website(websites){
-        return `
-        <section id="websites">
-            <div class="wrapper">
-                <h1 class="title">Partner Websites</h1>
-                <div class="website-list">
-                    ${WebsiteItems(websites)}
-                </div>
+    return `
+    <section id="websites">
+        <div class="wrapper">
+            <h1 class="title">Partner Websites</h1>
+            <div class="website-list">
+                ${WebsiteItems(websites)}
             </div>
-        </section>`
+        </div>
+    </section>`
 }
 
+// return HTML for partner website items
 export function WebsiteItems(websites){
     return websites.map(d=>`
         <div class="website-box">

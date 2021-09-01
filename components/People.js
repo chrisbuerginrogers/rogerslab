@@ -1,13 +1,12 @@
-import MaterialIcon from './MaterialIcon.js';
-import templateIdFrom from './Projects.js';
+import fileIdFrom, {getImageURL} from './Images.js';
 
+// return HTML for people section
 export default function People(people){
-    let currentMembers = people.filter(d=>{
-        return d.status === 'Member';
+    // decide what people will show as default
+    let defaultPeople = people.filter(d=>{
+        return d.status === 'Member'; // filter by status
     });
-
     return `
-    
     <section id="people">
         <div class="wrapper">
             <h1 class="title">People</h1>
@@ -35,31 +34,33 @@ export default function People(people){
 
             </div>
             <div class="people-list">
-                ${PeopleItems(currentMembers)}
+                ${PeopleItems(defaultPeople)}
             </div>
         </div>
-
     </section>`;
 }
 
+// return HTML for people items
 export function PeopleItems(people){
+    // optimize headshot image source
     let getHeadshotURL = (image)=>{
-        if (image===""){
-            return 'assets/global/headshot-placeholder.png';
-        }else if (image.startsWith("http") && image.includes("drive.google.com")){
+        if (image===""){ 
+            // in case of no image, show a placeholder image
+            return 'assets/global/headshot-placeholder.png'; 
+        }else if (image.startsWith("http") && image.includes("drive.google.com")){ 
+            // in case of google link, extract a file id from it and create a proper url for jpg, png images
             let photoid = "";
             const photourl = new URL(image);
-            photoid = imageIdFrom(photourl);
-            // console.log('id: ' + photoid);
-            return `https://drive.google.com/uc?id=${photoid}`;
+            photoid = fileIdFrom(photourl);
+            return `https://drive.google.com/uc?id=${photoid}`; 
         }else{
-            return image;
+            // in case of a local path or other image url, use the source as it is
+            return image; 
         }
     }
     return people.map(d=>`
-        
         <div class="people-item">
-            <img class="people-thumbnail"  src="${getHeadshotURL(d.photo)}">
+            <img class="people-thumbnail" src="${getHeadshotURL(d.photo)}">
             <div class="overlay">
                 <div class="people-interests">
                     ${d.interests}
@@ -73,29 +74,28 @@ export function PeopleItems(people){
             <div class="people-position">
                 ${d.affiliation}
             </div>
-            
         </div>
-        `).join('');
+    `).join('');
 }
 
+// return HTML for alumni items
 export function AlumniItems(people){
+    // optimize headshot image source
     let getHeadshotURL = (image)=>{
         if (image===""){
-            return 'assets/global/headshot-placeholder.png';
+            return 'assets/global/headshot-placeholder.png'; // in case of no image, show a placeholder image
         }else if (image.startsWith("http") && image.includes("drive.google.com")){
             let photoid = "";
             const photourl = new URL(image);
-            photoid = imageIdFrom(photourl);
-            // console.log('id: ' + photoid);
-            return `https://drive.google.com/uc?id=${photoid}`;
+            photoid = fileIdFrom(photourl);
+            return `https://drive.google.com/uc?id=${photoid}`; // in case of google link, extract a file id from it and create a proper url for jpg, png images
         }else{
-            return image;
+            return image; // in case of a local path or other image url, use the source as it is
         }
     }
     return people.map(d=>`
-        
         <div class="alumni-item">
-            <img class="alumni-thumbnail"  src="${getHeadshotURL(d.photo)}">
+            <img class="alumni-thumbnail" src="${getHeadshotURL(d.photo)}">
             <div class="people-name">
                 <a href="${d.link}" target="_blank">${d.name}</a>
             </div>
@@ -103,33 +103,20 @@ export function AlumniItems(people){
             <div class="people-position">
                 ${d.tags}
             </div>
-            
         </div>
-        `).join('');
+    `).join('');
 }
 
-
-export function imageIdFrom(url) {
-    url.toString();
-    let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
-    return match[1];
-    // 1. /([a-z0-9_-]{25,})[$/&?]/i
-    // 2. /\/d\/(.+)\//
-}
-
+// filter people by tags
 export function handlePeopleFilter(data){
     let conds = document.querySelectorAll('.filter input[name="people-filter"]');
-    // console.log(typeof conds);
     conds.forEach(cond=>cond.addEventListener('change', function(event){
-        
-        let checked = event.target.value; //Array.from(conds).filter(d=>d.checked).map(d=>d.value);
+        let checked = event.target.value;
         if (checked==='all'){
             let filtered = data.people.filter(d=>{
                 return d.status === 'Member';
             });
-        
             document.querySelector('.people-list').innerHTML = PeopleItems(filtered);
-            // document.querySelector('.people-list').innerHTML = PeopleItems(data.people);
         }else if (checked==='alumni') {
             let filtered = data.people.filter(d=>{
                 return d.status === 'Alumni';
@@ -140,10 +127,7 @@ export function handlePeopleFilter(data){
             let filtered = data.people.filter(d=>{
                 return d.tags.some(tag=>checked === tag.toLowerCase());
             });
-        
             document.querySelector('.people-list').innerHTML = PeopleItems(filtered);
         }
-    
     }));
-    
 }
