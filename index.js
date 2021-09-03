@@ -1,4 +1,3 @@
-
 import MainPage from './components/MainPage.js';
 import ProjectPage from './components/ProjectPage.js';
 import Navbar from './components/Navbar.js';

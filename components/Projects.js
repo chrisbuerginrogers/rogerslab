@@ -78,7 +78,5 @@ export function handleProjectFilter(data){
             });
             document.querySelector('.project-list').innerHTML = ProjectItems(filtered);
         }
-    
     }));
-    
 }
