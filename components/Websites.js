@@ -14,12 +14,12 @@ export default function Website(websites){
 // return HTML for partner website items
 export function WebsiteItems(websites){
     return websites.map(d=>`
-        <div class="website-box">
+        <a href="${d.link}" target="_blank" class="website-box">
             <img src="${d.teaser}" div class="website-teaser">
             <div class="info">
                 <div class="project-overview">
                     <div class="project-title">
-                        <a href="${d.link}" target="_blank"><strong>${d.title}</strong></a>
+                        <strong>${d.title}</strong>
                     </div>
                     <div class="project-subtitle">
                         ${d.description}<br>
@@ -27,6 +27,6 @@ export function WebsiteItems(websites){
                     <img src="${d.logo}" div class="box-logo">
                 </div>
             </div> 
-        </div>
+        </a>
     `).join('');
 }

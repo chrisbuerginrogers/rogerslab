@@ -41,23 +41,22 @@ export default function Projects(projects){
 // return HTML for project items
 export function ProjectItems(projects){
     return projects.map(d=>`
-        <div class="project-box">
-                <img src="${getImageURL(d.teaser)}" div class="teaser">
-                <div class="info">
-                    <div class="project-overview">
-                        <div class="project-tags">
-                            ${d.year}
-                        </div>
-                        <div class="project-title">
-                            <a href="?project=${d.id}"><strong>${d.title}</strong></a>
-                        </div>
+        <a href="?project=${d.id}" class="project-box">
+            <img src="${getImageURL(d.teaser)}" div class="teaser">
+            <div class="info">
+                <div class="project-overview">
+                    <div class="project-tags">
+                        ${d.year}
+                    </div>
+                    <div class="project-title">
+                        <strong>${d.title}</strong>
+                    </div>
                     <div class="project-subtitle">
                         ${d.subtitle}<br>
                     </div>
-                    
                 </div>
             </div> 
-        </div>
+        </a>
     `).join('');
 }
 
