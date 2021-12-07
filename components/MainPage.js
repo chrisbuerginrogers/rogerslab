@@ -10,9 +10,9 @@ export default function MainPage(data){
     document.querySelector('.container').innerHTML = `
         ${Navbar('main', Object.keys(data))}
         ${About(data.about)}
-        ${Website(data.websites)}
         ${Projects(data.projects)}
         ${People(data.people)}
+        ${Website(data.websites)}
         ${Footer(data.about)}
     `
     stringToArray(data.projects);

@@ -17,6 +17,9 @@ export default function Navbar(page, items){
             <li>
                 <a href="#people">PEOPLE</a>
             </li>
+            <li>
+                <a href="https://sites.tufts.edu/ceeoinstructions/" target="_blank" style="color: #c4c3d0">ADMIN</a>
+            </li>
             `
             )}
         </ul>
